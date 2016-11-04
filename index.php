@@ -29,54 +29,8 @@
 
 <!-- JQUERY -->
 <script src="js/jquery-2.2.4.min.js"></script>
-
-<!-- SCRIPT -->
-<script>
-    $(window).on('load', function () {
-
-        mapboxgl.accessToken = 'pk.eyJ1Ijoia2F6ZXMiLCJhIjoiMjBiMDc0M2UzYTdkY2NjZDZjZDVhZDdjYWMxMWU4NGMifQ.UbQyYB-QiEQklqy7AXI4XA';
-        var map = new mapboxgl.Map({
-            container: 'map',
-            style: 'mapbox://styles/kazes/cippyzs87004qdmm8k67m0nuu',
-            center: [2.354216632304883, 48.86083080287793],
-            zoom: 12
-        });
+<script src="js/base.js"></script>
 
 
-        map.style.on('load', function(){
-            // load json
-            $.ajax({
-                url: 'metro.geojson',
-                dataType: "json"
-            })
-            .done(function (data) {
-                console.log('data', data);
-
-
-                map.addSource("markers", {
-                    "type": "geojson",
-                    "data": data
-                });
-
-                map.addLayer({
-                    "id": "markers",
-                    "type": "symbol",
-                    "source": "markers",
-                    "paint": {
-                        "text-color": "#ffffff"
-                    },
-                    "layout": {
-                        "text-field": "{label}",
-                        "text-font": ["Open Sans Semibold", "Arial Unicode MS Bold"],
-                        "text-offset": [0, 0.6],
-                        "text-anchor": "top"
-                    }
-                });
-            });
-
-            window._map = map;
-        });
-    });
-</script>
 </body>
 </html>
