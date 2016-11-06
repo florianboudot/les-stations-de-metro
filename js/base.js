@@ -55,16 +55,44 @@ var addMarkers = function (data) {
     // todo: station must be html icon (to be hidden or visible with css)
     map.addLayer({
         "id": "markers",
-        "type": "symbol",
+        "type": "circle",
         "source": "markers",
         "paint": {
-            "text-color": "#ffffff"
+            //"text-color": "#ffffff"
+            // make circles larger as the user zooms from z12 to z22
+            'circle-radius': {
+                'base': 1.75,
+                'stops': [[5, 2], [12, 7], [22, 180]]
+            },
+            'circle-color': {
+                property: 'color',
+                type: 'categorical',
+                stops: [
+                    ["connection", '#FFFFFF'],
+                    ["M1", '#FFCD00'],
+                    ["M2", '#003CA6'],
+                    ["M3", '#837902'],
+                    ["M3b", '#6EC4E8'],
+                    ["M4", '#CF009E'],
+                    ["M5", '#FF7E2E'],
+                    ["M6", '#6ECA97'],
+                    ["M7", '#FA9ABA'],
+                    ["M7b", '#6ECA97'],
+                    ["M8", '#E19BDF'],
+                    ["M9", '#B6BD00'],
+                    ["M10", '#C9910D'],
+                    ["M11", '#704B1C'],
+                    ["M12", '#007852'],
+                    ["M13", '#6EC4E8'],
+                    ["M14", '#62259D']
+                ]
+            }
         },
         "layout": {
-            "text-field": "{label}", // show station name
-            "text-font": ["Open Sans Semibold", "Arial Unicode MS Bold"],
-            "text-offset": [0, 0.6],
-            "text-anchor": "top"
+            //"text-field": "{label}", // show station name
+            //"text-font": ["Open Sans Semibold", "Arial Unicode MS Bold"],
+            //"text-offset": [0, 0.6],
+            //"text-anchor": "top"
         }
     });
 

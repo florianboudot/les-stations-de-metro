@@ -10,22 +10,30 @@
         {
             "type": "Feature",
             "properties": {
-                "res_com": "M1",
-                "label": "Saint-Mandé"
+                "label": "Saint-Mandé",
+                "lines": [
+                    "M1"
+                ],
+                "color": "M1"
             },
             "geometry": {
                 "type": "Point",
                 "coordinates": [
                     2.420350814378168,
-                    48.846277285808043
+                    48.84627728580804
                 ]
             }
         },
         {
             "type": "Feature",
             "properties": {
-                "res_com": "M1 \/ M8 \/ M12",
-                "label": "Concorde"
+                "label": "Concorde",
+                "lines": [
+                    "M1",
+                    "M8",
+                    "M12"
+                ],
+                "color": "connection"
             },
             "geometry": {
                 "type": "Point",
@@ -38,22 +46,28 @@
         {
             "type": "Feature",
             "properties": {
-                "res_com": "M2",
-                "label": "Anvers"
+                "label": "Anvers",
+                "lines": [
+                    "M2"
+                ],
+                "color": "M2"
             },
             "geometry": {
                 "type": "Point",
                 "coordinates": [
                     2.344130633722553,
-                    48.882868647568387
+                    48.88286864756839
                 ]
             }
         },
         {
             "type": "Feature",
             "properties": {
-                "res_com": "M2",
-                "label": "Rome"
+                "label": "Rome",
+                "lines": [
+                    "M2"
+                ],
+                "color": "M2"
             },
             "geometry": {
                 "type": "Point",
@@ -66,8 +80,11 @@
         {
             "type": "Feature",
             "properties": {
-                "res_com": "M2",
-                "label": "Monceau"
+                "label": "Monceau",
+                "lines": [
+                    "M2"
+                ],
+                "color": "M2"
             },
             "geometry": {
                 "type": "Point",
@@ -80,8 +97,12 @@
         {
             "type": "Feature",
             "properties": {
-                "res_com": "M2 \/ M3",
-                "label": "Père Lachaise"
+                "label": "Père Lachaise",
+                "lines": [
+                    "M2",
+                    "M3"
+                ],
+                "color": "connection"
             },
             "geometry": {
                 "type": "Point",
@@ -94,64 +115,81 @@
         {
             "type": "Feature",
             "properties": {
-                "res_com": "M3 \/ M9",
-                "label": "Havre-Caumartin"
+                "label": "Havre-Caumartin",
+                "lines": [
+                    "M3",
+                    "M9"
+                ],
+                "color": "connection"
             },
             "geometry": {
                 "type": "Point",
                 "coordinates": [
                     2.326999858880872,
-                    48.873806733862558
+                    48.87380673386256
                 ]
             }
         },
         {
             "type": "Feature",
             "properties": {
-                "res_com": "M3",
-                "label": "Malesherbes"
+                "label": "Malesherbes",
+                "lines": [
+                    "M3"
+                ],
+                "color": "M3"
             },
             "geometry": {
                 "type": "Point",
                 "coordinates": [
                     2.309052264550479,
-                    48.882891917454131
+                    48.88289191745413
                 ]
             }
         },
         {
             "type": "Feature",
             "properties": {
-                "res_com": "M3",
-                "label": "Louise Michel"
+                "label": "Louise Michel",
+                "lines": [
+                    "M3"
+                ],
+                "color": "M3"
             },
             "geometry": {
                 "type": "Point",
                 "coordinates": [
                     2.288083633048504,
-                    48.888706019775142
+                    48.88870601977514
                 ]
             }
         },
         {
             "type": "Feature",
             "properties": {
-                "res_com": "M2 \/ M4",
-                "label": "Barbès-Rochechouart"
+                "label": "Barbès-Rochechouart",
+                "lines": [
+                    "M2",
+                    "M4"
+                ],
+                "color": "connection"
             },
             "geometry": {
                 "type": "Point",
                 "coordinates": [
                     2.349636148269586,
-                    48.883734465746969
+                    48.88373446574697
                 ]
             }
         },
         {
             "type": "Feature",
             "properties": {
-                "res_com": "M4",
-                "label": "Les Halles"
+                "label": "Les Halles",
+                "lines": [
+                    "M4"
+                ],
+                "color": "M4"
             },
             "geometry": {
                 "type": "Point",
@@ -164,8 +202,11 @@
         {
             "type": "Feature",
             "properties": {
-                "res_com": "M4",
-                "label": "Saint-Germain-des-Près"
+                "label": "Saint-Germain-des-Près",
+                "lines": [
+                    "M4"
+                ],
+                "color": "M4"
             },
             "geometry": {
                 "type": "Point",
@@ -178,22 +219,28 @@
         {
             "type": "Feature",
             "properties": {
-                "res_com": "M4",
-                "label": "Vavin"
+                "label": "Vavin",
+                "lines": [
+                    "M4"
+                ],
+                "color": "M4"
             },
             "geometry": {
                 "type": "Point",
                 "coordinates": [
                     2.329008926235403,
-                    48.842218413613523
+                    48.84221841361352
                 ]
             }
         },
         {
             "type": "Feature",
             "properties": {
-                "res_com": "M4",
-                "label": "Mouton-Duvernet"
+                "label": "Mouton-Duvernet",
+                "lines": [
+                    "M4"
+                ],
+                "color": "M4"
             },
             "geometry": {
                 "type": "Point",
@@ -206,8 +253,11 @@
         {
             "type": "Feature",
             "properties": {
-                "res_com": "M9",
-                "label": "Ranelagh"
+                "label": "Ranelagh",
+                "lines": [
+                    "M9"
+                ],
+                "color": "M9"
             },
             "geometry": {
                 "type": "Point",
@@ -220,8 +270,12 @@
         {
             "type": "Feature",
             "properties": {
-                "res_com": "M7 \/ M9",
-                "label": "Chaussée d'Antin-La Fayette"
+                "label": "Chaussée d'Antin-La Fayette",
+                "lines": [
+                    "M7",
+                    "M9"
+                ],
+                "color": "connection"
             },
             "geometry": {
                 "type": "Point",
@@ -234,36 +288,45 @@
         {
             "type": "Feature",
             "properties": {
-                "res_com": "M9",
-                "label": "St-Ambroise"
+                "label": "St-Ambroise",
+                "lines": [
+                    "M9"
+                ],
+                "color": "M9"
             },
             "geometry": {
                 "type": "Point",
                 "coordinates": [
                     2.37473343128132,
-                    48.861019259919587
+                    48.86101925991959
                 ]
             }
         },
         {
             "type": "Feature",
             "properties": {
-                "res_com": "M9",
-                "label": "Maraîchers"
+                "label": "Maraîchers",
+                "lines": [
+                    "M9"
+                ],
+                "color": "M9"
             },
             "geometry": {
                 "type": "Point",
                 "coordinates": [
                     2.40608916324169,
-                    48.852725119277601
+                    48.8527251192776
                 ]
             }
         },
         {
             "type": "Feature",
             "properties": {
-                "res_com": "M10",
-                "label": "Boulogne-Jean Jaurès"
+                "label": "Boulogne-Jean Jaurès",
+                "lines": [
+                    "M10"
+                ],
+                "color": "M10"
             },
             "geometry": {
                 "type": "Point",
@@ -276,8 +339,11 @@
         {
             "type": "Feature",
             "properties": {
-                "res_com": "M10",
-                "label": "Cluny La Sorbonne"
+                "label": "Cluny La Sorbonne",
+                "lines": [
+                    "M10"
+                ],
+                "color": "M10"
             },
             "geometry": {
                 "type": "Point",
@@ -290,106 +356,132 @@
         {
             "type": "Feature",
             "properties": {
-                "res_com": "M11",
-                "label": "Télégraphe"
+                "label": "Télégraphe",
+                "lines": [
+                    "M11"
+                ],
+                "color": "M11"
             },
             "geometry": {
                 "type": "Point",
                 "coordinates": [
                     2.398867599341846,
-                    48.875474457592112
+                    48.87547445759211
                 ]
             }
         },
         {
             "type": "Feature",
             "properties": {
-                "res_com": "M7b \/ M11",
-                "label": "Place des Fêtes"
+                "label": "Place des Fêtes",
+                "lines": [
+                    "M7b",
+                    "M11"
+                ],
+                "color": "connection"
             },
             "geometry": {
                 "type": "Point",
                 "coordinates": [
                     2.393056093323958,
-                    48.876806389219809
+                    48.87680638921981
                 ]
             }
         },
         {
             "type": "Feature",
             "properties": {
-                "res_com": "M11",
-                "label": "Jourdain"
+                "label": "Jourdain",
+                "lines": [
+                    "M11"
+                ],
+                "color": "M11"
             },
             "geometry": {
                 "type": "Point",
                 "coordinates": [
                     2.389415029319366,
-                    48.875111816042818
+                    48.87511181604282
                 ]
             }
         },
         {
             "type": "Feature",
             "properties": {
-                "res_com": "M12",
-                "label": "Mairie d'Issy"
+                "label": "Mairie d'Issy",
+                "lines": [
+                    "M12"
+                ],
+                "color": "M12"
             },
             "geometry": {
                 "type": "Point",
                 "coordinates": [
                     2.273041523780413,
-                    48.824105030680691
+                    48.82410503068069
                 ]
             }
         },
         {
             "type": "Feature",
             "properties": {
-                "res_com": "M12",
-                "label": "Trinité d'Estienne d'Orves"
+                "label": "Trinité d'Estienne d'Orves",
+                "lines": [
+                    "M12"
+                ],
+                "color": "M12"
             },
             "geometry": {
                 "type": "Point",
                 "coordinates": [
                     2.332543027297523,
-                    48.876317962264473
+                    48.87631796226447
                 ]
             }
         },
         {
             "type": "Feature",
             "properties": {
-                "res_com": "M2 \/ M12",
-                "label": "Pigalle"
+                "label": "Pigalle",
+                "lines": [
+                    "M2",
+                    "M12"
+                ],
+                "color": "connection"
             },
             "geometry": {
                 "type": "Point",
                 "coordinates": [
                     2.337085136498658,
-                    48.882442690881547
+                    48.88244269088155
                 ]
             }
         },
         {
             "type": "Feature",
             "properties": {
-                "res_com": "M12",
-                "label": "Abbesses"
+                "label": "Abbesses",
+                "lines": [
+                    "M12"
+                ],
+                "color": "M12"
             },
             "geometry": {
                 "type": "Point",
                 "coordinates": [
                     2.337949777055663,
-                    48.884594208035338
+                    48.88459420803534
                 ]
             }
         },
         {
             "type": "Feature",
             "properties": {
-                "res_com": "M12",
-                "label": "Jules Joffrin"
+                "label": "Jules Joffrin",
+                "lines": [
+                    "M12"
+                ],
+                "color": "M12"
             },
             "geometry": {
                 "type": "Point",
@@ -402,78 +494,98 @@
         {
             "type": "Feature",
             "properties": {
-                "res_com": "M13",
-                "label": "Brochant"
+                "label": "Brochant",
+                "lines": [
+                    "M13"
+                ],
+                "color": "M13"
             },
             "geometry": {
                 "type": "Point",
                 "coordinates": [
                     2.320174755787804,
-                    48.890587186604058
+                    48.89058718660406
                 ]
             }
         },
         {
             "type": "Feature",
             "properties": {
-                "res_com": "M10 \/ M13",
-                "label": "Duroc"
+                "label": "Duroc",
+                "lines": [
+                    "M10",
+                    "M13"
+                ],
+                "color": "connection"
             },
             "geometry": {
                 "type": "Point",
                 "coordinates": [
                     2.316634671114557,
-                    48.846854854852737
+                    48.84685485485274
                 ]
             }
         },
         {
             "type": "Feature",
             "properties": {
-                "res_com": "M13",
-                "label": "Varenne"
+                "label": "Varenne",
+                "lines": [
+                    "M13"
+                ],
+                "color": "M13"
             },
             "geometry": {
                 "type": "Point",
                 "coordinates": [
                     2.315056637317088,
-                    48.856871379249178
+                    48.85687137924918
                 ]
             }
         },
         {
             "type": "Feature",
             "properties": {
-                "res_com": "M2 \/ M13",
-                "label": "Place de Clichy"
+                "label": "Place de Clichy",
+                "lines": [
+                    "M2",
+                    "M13"
+                ],
+                "color": "connection"
             },
             "geometry": {
                 "type": "Point",
                 "coordinates": [
                     2.327228335720636,
-                    48.883430013825702
+                    48.8834300138257
                 ]
             }
         },
         {
             "type": "Feature",
             "properties": {
-                "res_com": "M13",
-                "label": "La Fourche"
+                "label": "La Fourche",
+                "lines": [
+                    "M13"
+                ],
+                "color": "M13"
             },
             "geometry": {
                 "type": "Point",
                 "coordinates": [
                     2.325779674806892,
-                    48.887183946865783
+                    48.88718394686578
                 ]
             }
         },
         {
             "type": "Feature",
             "properties": {
-                "res_com": "M3b",
-                "label": "Saint-Fargeau"
+                "label": "Saint-Fargeau",
+                "lines": [
+                    "M3b"
+                ],
+                "color": "M3b"
             },
             "geometry": {
                 "type": "Point",
@@ -486,8 +598,11 @@
         {
             "type": "Feature",
             "properties": {
-                "res_com": "M7b",
-                "label": "Buttes-Chaumont"
+                "label": "Buttes-Chaumont",
+                "lines": [
+                    "M7b"
+                ],
+                "color": "M7b"
             },
             "geometry": {
                 "type": "Point",
@@ -500,22 +615,28 @@
         {
             "type": "Feature",
             "properties": {
-                "res_com": "M6",
-                "label": "Chevaleret"
+                "label": "Chevaleret",
+                "lines": [
+                    "M6"
+                ],
+                "color": "M6"
             },
             "geometry": {
                 "type": "Point",
                 "coordinates": [
                     2.368126329061812,
-                    48.834947722348048
+                    48.83494772234805
                 ]
             }
         },
         {
             "type": "Feature",
             "properties": {
-                "res_com": "M6",
-                "label": "Corvisart"
+                "label": "Corvisart",
+                "lines": [
+                    "M6"
+                ],
+                "color": "M6"
             },
             "geometry": {
                 "type": "Point",
@@ -528,36 +649,45 @@
         {
             "type": "Feature",
             "properties": {
-                "res_com": "M7",
-                "label": "Cadet"
+                "label": "Cadet",
+                "lines": [
+                    "M7"
+                ],
+                "color": "M7"
             },
             "geometry": {
                 "type": "Point",
                 "coordinates": [
                     2.344126030464426,
-                    48.875890681893708
+                    48.87589068189371
                 ]
             }
         },
         {
             "type": "Feature",
             "properties": {
-                "res_com": "M7",
-                "label": "Le Peletier"
+                "label": "Le Peletier",
+                "lines": [
+                    "M7"
+                ],
+                "color": "M7"
             },
             "geometry": {
                 "type": "Point",
                 "coordinates": [
                     2.34019988438517,
-                    48.874874343377371
+                    48.87487434337737
                 ]
             }
         },
         {
             "type": "Feature",
             "properties": {
-                "res_com": "M7",
-                "label": "Pont-Neuf"
+                "label": "Pont-Neuf",
+                "lines": [
+                    "M7"
+                ],
+                "color": "M7"
             },
             "geometry": {
                 "type": "Point",
@@ -570,36 +700,45 @@
         {
             "type": "Feature",
             "properties": {
-                "res_com": "M7",
-                "label": "Pont-Marie"
+                "label": "Pont-Marie",
+                "lines": [
+                    "M7"
+                ],
+                "color": "M7"
             },
             "geometry": {
                 "type": "Point",
                 "coordinates": [
                     2.357162568881776,
-                    48.853575473388219
+                    48.85357547338822
                 ]
             }
         },
         {
             "type": "Feature",
             "properties": {
-                "res_com": "M7",
-                "label": "Place Monge"
+                "label": "Place Monge",
+                "lines": [
+                    "M7"
+                ],
+                "color": "M7"
             },
             "geometry": {
                 "type": "Point",
                 "coordinates": [
                     2.352224728183084,
-                    48.842866830682659
+                    48.84286683068266
                 ]
             }
         },
         {
             "type": "Feature",
             "properties": {
-                "res_com": "M7",
-                "label": "Tolbiac"
+                "label": "Tolbiac",
+                "lines": [
+                    "M7"
+                ],
+                "color": "M7"
             },
             "geometry": {
                 "type": "Point",
@@ -612,22 +751,32 @@
         {
             "type": "Feature",
             "properties": {
-                "res_com": "M8 \/ M12 \/ M14",
-                "label": "Madeleine"
+                "label": "Madeleine",
+                "lines": [
+                    "M8",
+                    "M12",
+                    "M14"
+                ],
+                "color": "connection"
             },
             "geometry": {
                 "type": "Point",
                 "coordinates": [
                     2.325164109535879,
-                    48.870099732848473
+                    48.87009973284847
                 ]
             }
         },
         {
             "type": "Feature",
             "properties": {
-                "res_com": "M3 \/ M7 \/ M8",
-                "label": "Opéra"
+                "label": "Opéra",
+                "lines": [
+                    "M3",
+                    "M7",
+                    "M8"
+                ],
+                "color": "connection"
             },
             "geometry": {
                 "type": "Point",
@@ -640,8 +789,11 @@
         {
             "type": "Feature",
             "properties": {
-                "res_com": "M8",
-                "label": "Montgallet"
+                "label": "Montgallet",
+                "lines": [
+                    "M8"
+                ],
+                "color": "M8"
             },
             "geometry": {
                 "type": "Point",
@@ -654,22 +806,28 @@
         {
             "type": "Feature",
             "properties": {
-                "res_com": "M8",
-                "label": "Michel Bizot"
+                "label": "Michel Bizot",
+                "lines": [
+                    "M8"
+                ],
+                "color": "M8"
             },
             "geometry": {
                 "type": "Point",
                 "coordinates": [
                     2.402333165917444,
-                    48.837117006995527
+                    48.83711700699553
                 ]
             }
         },
         {
             "type": "Feature",
             "properties": {
-                "res_com": "M9",
-                "label": "Billancourt"
+                "label": "Billancourt",
+                "lines": [
+                    "M9"
+                ],
+                "color": "M9"
             },
             "geometry": {
                 "type": "Point",
@@ -682,36 +840,45 @@
         {
             "type": "Feature",
             "properties": {
-                "res_com": "M1",
-                "label": "Louvre-Rivoli"
+                "label": "Louvre-Rivoli",
+                "lines": [
+                    "M1"
+                ],
+                "color": "M1"
             },
             "geometry": {
                 "type": "Point",
                 "coordinates": [
                     2.341108591634067,
-                    48.860806291272098
+                    48.8608062912721
                 ]
             }
         },
         {
             "type": "Feature",
             "properties": {
-                "res_com": "M1",
-                "label": "George V"
+                "label": "George V",
+                "lines": [
+                    "M1"
+                ],
+                "color": "M1"
             },
             "geometry": {
                 "type": "Point",
                 "coordinates": [
                     2.300560451248797,
-                    48.872023809500433
+                    48.87202380950043
                 ]
             }
         },
         {
             "type": "Feature",
             "properties": {
-                "res_com": "M1",
-                "label": "Argentine"
+                "label": "Argentine",
+                "lines": [
+                    "M1"
+                ],
+                "color": "M1"
             },
             "geometry": {
                 "type": "Point",
@@ -724,22 +891,28 @@
         {
             "type": "Feature",
             "properties": {
-                "res_com": "M2",
-                "label": "Couronnes"
+                "label": "Couronnes",
+                "lines": [
+                    "M2"
+                ],
+                "color": "M2"
             },
             "geometry": {
                 "type": "Point",
                 "coordinates": [
                     2.380542585989343,
-                    48.869091162924988
+                    48.86909116292499
                 ]
             }
         },
         {
             "type": "Feature",
             "properties": {
-                "res_com": "M2",
-                "label": "Ternes"
+                "label": "Ternes",
+                "lines": [
+                    "M2"
+                ],
+                "color": "M2"
             },
             "geometry": {
                 "type": "Point",
@@ -752,8 +925,11 @@
         {
             "type": "Feature",
             "properties": {
-                "res_com": "M2",
-                "label": "Victor Hugo"
+                "label": "Victor Hugo",
+                "lines": [
+                    "M2"
+                ],
+                "color": "M2"
             },
             "geometry": {
                 "type": "Point",
@@ -766,22 +942,29 @@
         {
             "type": "Feature",
             "properties": {
-                "res_com": "M3 \/ M3b",
-                "label": "Gambetta"
+                "label": "Gambetta",
+                "lines": [
+                    "M3",
+                    "M3b"
+                ],
+                "color": "connection"
             },
             "geometry": {
                 "type": "Point",
                 "coordinates": [
                     2.398984440248072,
-                    48.864916685051831
+                    48.86491668505183
                 ]
             }
         },
         {
             "type": "Feature",
             "properties": {
-                "res_com": "M3",
-                "label": "Parmentier"
+                "label": "Parmentier",
+                "lines": [
+                    "M3"
+                ],
+                "color": "M3"
             },
             "geometry": {
                 "type": "Point",
@@ -794,8 +977,11 @@
         {
             "type": "Feature",
             "properties": {
-                "res_com": "M3",
-                "label": "Quatre Septembre"
+                "label": "Quatre Septembre",
+                "lines": [
+                    "M3"
+                ],
+                "color": "M3"
             },
             "geometry": {
                 "type": "Point",
@@ -808,36 +994,46 @@
         {
             "type": "Feature",
             "properties": {
-                "res_com": "M3",
-                "label": "Europe"
+                "label": "Europe",
+                "lines": [
+                    "M3"
+                ],
+                "color": "M3"
             },
             "geometry": {
                 "type": "Point",
                 "coordinates": [
                     2.322265213118896,
-                    48.878770368486833
+                    48.87877036848683
                 ]
             }
         },
         {
             "type": "Feature",
             "properties": {
-                "res_com": "M4",
-                "label": "Porte de Clignancourt"
+                "label": "Porte de Clignancourt",
+                "lines": [
+                    "M4"
+                ],
+                "color": "M4"
             },
             "geometry": {
                 "type": "Point",
                 "coordinates": [
                     2.344847748752398,
-                    48.897402222898087
+                    48.89740222289809
                 ]
             }
         },
         {
             "type": "Feature",
             "properties": {
-                "res_com": "M3 \/ M4",
-                "label": "Réaumur-Sébastopol"
+                "label": "Réaumur-Sébastopol",
+                "lines": [
+                    "M3",
+                    "M4"
+                ],
+                "color": "connection"
             },
             "geometry": {
                 "type": "Point",
@@ -850,8 +1046,12 @@
         {
             "type": "Feature",
             "properties": {
-                "res_com": "M4 \/ M10",
-                "label": "Odéon"
+                "label": "Odéon",
+                "lines": [
+                    "M4",
+                    "M10"
+                ],
+                "color": "connection"
             },
             "geometry": {
                 "type": "Point",
@@ -864,8 +1064,11 @@
         {
             "type": "Feature",
             "properties": {
-                "res_com": "M4",
-                "label": "Saint-Sulpice"
+                "label": "Saint-Sulpice",
+                "lines": [
+                    "M4"
+                ],
+                "color": "M4"
             },
             "geometry": {
                 "type": "Point",
@@ -878,36 +1081,47 @@
         {
             "type": "Feature",
             "properties": {
-                "res_com": "M2 \/ M5 \/ M7",
-                "label": "Stalingrad"
+                "label": "Stalingrad",
+                "lines": [
+                    "M2",
+                    "M5",
+                    "M7"
+                ],
+                "color": "connection"
             },
             "geometry": {
                 "type": "Point",
                 "coordinates": [
                     2.368912703310147,
-                    48.883995220466318
+                    48.88399522046632
                 ]
             }
         },
         {
             "type": "Feature",
             "properties": {
-                "res_com": "M5",
-                "label": "Jacques Bonsergent"
+                "label": "Jacques Bonsergent",
+                "lines": [
+                    "M5"
+                ],
+                "color": "M5"
             },
             "geometry": {
                 "type": "Point",
                 "coordinates": [
                     2.361027462783641,
-                    48.870809983596111
+                    48.87080998359611
                 ]
             }
         },
         {
             "type": "Feature",
             "properties": {
-                "res_com": "M9",
-                "label": "Saint-Augustin"
+                "label": "Saint-Augustin",
+                "lines": [
+                    "M9"
+                ],
+                "color": "M9"
             },
             "geometry": {
                 "type": "Point",
@@ -920,22 +1134,33 @@
         {
             "type": "Feature",
             "properties": {
-                "res_com": "M3 \/ M5 \/ M8 \/ M9 \/ M11",
-                "label": "République"
+                "label": "République",
+                "lines": [
+                    "M3",
+                    "M5",
+                    "M8",
+                    "M9",
+                    "M11"
+                ],
+                "color": "connection"
             },
             "geometry": {
                 "type": "Point",
                 "coordinates": [
                     2.363826143977408,
-                    48.867503423778842
+                    48.86750342377884
                 ]
             }
         },
         {
             "type": "Feature",
             "properties": {
-                "res_com": "M5 \/ M9",
-                "label": "Oberkampf"
+                "label": "Oberkampf",
+                "lines": [
+                    "M5",
+                    "M9"
+                ],
+                "color": "connection"
             },
             "geometry": {
                 "type": "Point",
@@ -948,22 +1173,28 @@
         {
             "type": "Feature",
             "properties": {
-                "res_com": "M9",
-                "label": "Charonne"
+                "label": "Charonne",
+                "lines": [
+                    "M9"
+                ],
+                "color": "M9"
             },
             "geometry": {
                 "type": "Point",
                 "coordinates": [
                     2.385563480822886,
-                    48.854580499081017
+                    48.85458049908102
                 ]
             }
         },
         {
             "type": "Feature",
             "properties": {
-                "res_com": "M9",
-                "label": "Mairie de Montreuil"
+                "label": "Mairie de Montreuil",
+                "lines": [
+                    "M9"
+                ],
+                "color": "M9"
             },
             "geometry": {
                 "type": "Point",
@@ -976,8 +1207,11 @@
         {
             "type": "Feature",
             "properties": {
-                "res_com": "M10",
-                "label": "Mirabeau"
+                "label": "Mirabeau",
+                "lines": [
+                    "M10"
+                ],
+                "color": "M10"
             },
             "geometry": {
                 "type": "Point",
@@ -990,36 +1224,46 @@
         {
             "type": "Feature",
             "properties": {
-                "res_com": "M10",
-                "label": "Ségur"
+                "label": "Ségur",
+                "lines": [
+                    "M10"
+                ],
+                "color": "M10"
             },
             "geometry": {
                 "type": "Point",
                 "coordinates": [
                     2.307402240619641,
-                    48.847066133152452
+                    48.84706613315245
                 ]
             }
         },
         {
             "type": "Feature",
             "properties": {
-                "res_com": "M10",
-                "label": "Vaneau"
+                "label": "Vaneau",
+                "lines": [
+                    "M10"
+                ],
+                "color": "M10"
             },
             "geometry": {
                 "type": "Point",
                 "coordinates": [
                     2.32125786290546,
-                    48.848816372470303
+                    48.8488163724703
                 ]
             }
         },
         {
             "type": "Feature",
             "properties": {
-                "res_com": "M10 \/ M12",
-                "label": "Sèvres-Babylone"
+                "label": "Sèvres-Babylone",
+                "lines": [
+                    "M10",
+                    "M12"
+                ],
+                "color": "connection"
             },
             "geometry": {
                 "type": "Point",
@@ -1032,106 +1276,131 @@
         {
             "type": "Feature",
             "properties": {
-                "res_com": "M10",
-                "label": "Maubert Mutualité"
+                "label": "Maubert Mutualité",
+                "lines": [
+                    "M10"
+                ],
+                "color": "M10"
             },
             "geometry": {
                 "type": "Point",
                 "coordinates": [
                     2.34805429322118,
-                    48.850127322912009
+                    48.85012732291201
                 ]
             }
         },
         {
             "type": "Feature",
             "properties": {
-                "res_com": "M10",
-                "label": "Cardinal Lemoine"
+                "label": "Cardinal Lemoine",
+                "lines": [
+                    "M10"
+                ],
+                "color": "M10"
             },
             "geometry": {
                 "type": "Point",
                 "coordinates": [
                     2.351623256378513,
-                    48.846656851250039
+                    48.84665685125004
                 ]
             }
         },
         {
             "type": "Feature",
             "properties": {
-                "res_com": "M12",
-                "label": "Corentin Celton"
+                "label": "Corentin Celton",
+                "lines": [
+                    "M12"
+                ],
+                "color": "M12"
             },
             "geometry": {
                 "type": "Point",
                 "coordinates": [
                     2.279411682050421,
-                    48.827085448896433
+                    48.82708544889643
                 ]
             }
         },
         {
             "type": "Feature",
             "properties": {
-                "res_com": "M6 \/ M12",
-                "label": "Pasteur"
+                "label": "Pasteur",
+                "lines": [
+                    "M6",
+                    "M12"
+                ],
+                "color": "connection"
             },
             "geometry": {
                 "type": "Point",
                 "coordinates": [
                     2.312607049649865,
-                    48.842920619084602
+                    48.8429206190846
                 ]
             }
         },
         {
             "type": "Feature",
             "properties": {
-                "res_com": "M12",
-                "label": "Assemblée Nationale"
+                "label": "Assemblée Nationale",
+                "lines": [
+                    "M12"
+                ],
+                "color": "M12"
             },
             "geometry": {
                 "type": "Point",
                 "coordinates": [
                     2.320998191965805,
-                    48.860786962627436
+                    48.86078696262744
                 ]
             }
         },
         {
             "type": "Feature",
             "properties": {
-                "res_com": "M12",
-                "label": "Notre-Dame-de-Lorette"
+                "label": "Notre-Dame-de-Lorette",
+                "lines": [
+                    "M12"
+                ],
+                "color": "M12"
             },
             "geometry": {
                 "type": "Point",
                 "coordinates": [
                     2.337886489069273,
-                    48.876026211608533
+                    48.87602621160853
                 ]
             }
         },
         {
             "type": "Feature",
             "properties": {
-                "res_com": "M12",
-                "label": "Lamarck-Caulaincourt"
+                "label": "Lamarck-Caulaincourt",
+                "lines": [
+                    "M12"
+                ],
+                "color": "M12"
             },
             "geometry": {
                 "type": "Point",
                 "coordinates": [
                     2.338760653233254,
-                    48.889674075707013
+                    48.88967407570701
                 ]
             }
         },
         {
             "type": "Feature",
             "properties": {
-                "res_com": "M13",
-                "label": "Mairie de Clichy"
+                "label": "Mairie de Clichy",
+                "lines": [
+                    "M13"
+                ],
+                "color": "M13"
             },
             "geometry": {
                 "type": "Point",
@@ -1144,64 +1413,81 @@
         {
             "type": "Feature",
             "properties": {
-                "res_com": "M9 \/ M13",
-                "label": "Miromesnil"
+                "label": "Miromesnil",
+                "lines": [
+                    "M9",
+                    "M13"
+                ],
+                "color": "connection"
             },
             "geometry": {
                 "type": "Point",
                 "coordinates": [
                     2.314467989568736,
-                    48.873685210636353
+                    48.87368521063635
                 ]
             }
         },
         {
             "type": "Feature",
             "properties": {
-                "res_com": "M13",
-                "label": "Porte de St-Ouen"
+                "label": "Porte de St-Ouen",
+                "lines": [
+                    "M13"
+                ],
+                "color": "M13"
             },
             "geometry": {
                 "type": "Point",
                 "coordinates": [
                     2.328942812779894,
-                    48.897374795529522
+                    48.89737479552952
                 ]
             }
         },
         {
             "type": "Feature",
             "properties": {
-                "res_com": "M13",
-                "label": "Garibaldi"
+                "label": "Garibaldi",
+                "lines": [
+                    "M13"
+                ],
+                "color": "M13"
             },
             "geometry": {
                 "type": "Point",
                 "coordinates": [
                     2.33183083796241,
-                    48.906094050248619
+                    48.90609405024862
                 ]
             }
         },
         {
             "type": "Feature",
             "properties": {
-                "res_com": "M7b",
-                "label": "Botzaris"
+                "label": "Botzaris",
+                "lines": [
+                    "M7b"
+                ],
+                "color": "M7b"
             },
             "geometry": {
                 "type": "Point",
                 "coordinates": [
                     2.389115807376888,
-                    48.879481771912928
+                    48.87948177191293
                 ]
             }
         },
         {
             "type": "Feature",
             "properties": {
-                "res_com": "M6 \/ M14",
-                "label": "Bercy"
+                "label": "Bercy",
+                "lines": [
+                    "M6",
+                    "M14"
+                ],
+                "color": "connection"
             },
             "geometry": {
                 "type": "Point",
@@ -1214,8 +1500,11 @@
         {
             "type": "Feature",
             "properties": {
-                "res_com": "M6",
-                "label": "Nationale"
+                "label": "Nationale",
+                "lines": [
+                    "M6"
+                ],
+                "color": "M6"
             },
             "geometry": {
                 "type": "Point",
@@ -1228,8 +1517,11 @@
         {
             "type": "Feature",
             "properties": {
-                "res_com": "M6",
-                "label": "Glacière"
+                "label": "Glacière",
+                "lines": [
+                    "M6"
+                ],
+                "color": "M6"
             },
             "geometry": {
                 "type": "Point",
@@ -1242,50 +1534,63 @@
         {
             "type": "Feature",
             "properties": {
-                "res_com": "M6",
-                "label": "Saint-Jacques"
+                "label": "Saint-Jacques",
+                "lines": [
+                    "M6"
+                ],
+                "color": "M6"
             },
             "geometry": {
                 "type": "Point",
                 "coordinates": [
                     2.33713519470604,
-                    48.832900815667792
+                    48.83290081566779
                 ]
             }
         },
         {
             "type": "Feature",
             "properties": {
-                "res_com": "M7",
-                "label": "Pierre et Marie Curie"
+                "label": "Pierre et Marie Curie",
+                "lines": [
+                    "M7"
+                ],
+                "color": "M7"
             },
             "geometry": {
                 "type": "Point",
                 "coordinates": [
                     2.377267200151936,
-                    48.815930763049217
+                    48.81593076304922
                 ]
             }
         },
         {
             "type": "Feature",
             "properties": {
-                "res_com": "M7",
-                "label": "Villejuif-Paul Vaillant-Couturier"
+                "label": "Villejuif-Paul Vaillant-Couturier",
+                "lines": [
+                    "M7"
+                ],
+                "color": "M7"
             },
             "geometry": {
                 "type": "Point",
                 "coordinates": [
                     2.368269540049694,
-                    48.796483084550523
+                    48.79648308455052
                 ]
             }
         },
         {
             "type": "Feature",
             "properties": {
-                "res_com": "M8 \/ M9",
-                "label": "Richelieu-Drouot"
+                "label": "Richelieu-Drouot",
+                "lines": [
+                    "M8",
+                    "M9"
+                ],
+                "color": "connection"
             },
             "geometry": {
                 "type": "Point",
@@ -1298,22 +1603,28 @@
         {
             "type": "Feature",
             "properties": {
-                "res_com": "M8",
-                "label": "Filles du Calvaire"
+                "label": "Filles du Calvaire",
+                "lines": [
+                    "M8"
+                ],
+                "color": "M8"
             },
             "geometry": {
                 "type": "Point",
                 "coordinates": [
                     2.366661094716491,
-                    48.863257944966101
+                    48.8632579449661
                 ]
             }
         },
         {
             "type": "Feature",
             "properties": {
-                "res_com": "M8",
-                "label": "St-Sébastien Froissart"
+                "label": "St-Sébastien Froissart",
+                "lines": [
+                    "M8"
+                ],
+                "color": "M8"
             },
             "geometry": {
                 "type": "Point",
@@ -1326,8 +1637,11 @@
         {
             "type": "Feature",
             "properties": {
-                "res_com": "M8",
-                "label": "Faidherbe-Chaligny"
+                "label": "Faidherbe-Chaligny",
+                "lines": [
+                    "M8"
+                ],
+                "color": "M8"
             },
             "geometry": {
                 "type": "Point",
@@ -1340,8 +1654,11 @@
         {
             "type": "Feature",
             "properties": {
-                "res_com": "M8",
-                "label": "Maisons-Alfort-Les Juilliottes"
+                "label": "Maisons-Alfort-Les Juilliottes",
+                "lines": [
+                    "M8"
+                ],
+                "color": "M8"
             },
             "geometry": {
                 "type": "Point",
@@ -1354,8 +1671,11 @@
         {
             "type": "Feature",
             "properties": {
-                "res_com": "M8",
-                "label": "Créteil-L'Échat"
+                "label": "Créteil-L'Échat",
+                "lines": [
+                    "M8"
+                ],
+                "color": "M8"
             },
             "geometry": {
                 "type": "Point",
@@ -1368,8 +1688,11 @@
         {
             "type": "Feature",
             "properties": {
-                "res_com": "M1",
-                "label": "Château de Vincennes"
+                "label": "Château de Vincennes",
+                "lines": [
+                    "M1"
+                ],
+                "color": "M1"
             },
             "geometry": {
                 "type": "Point",
@@ -1382,8 +1705,12 @@
         {
             "type": "Feature",
             "properties": {
-                "res_com": "M1 \/ M8",
-                "label": "Reuilly-Diderot"
+                "label": "Reuilly-Diderot",
+                "lines": [
+                    "M1",
+                    "M8"
+                ],
+                "color": "connection"
             },
             "geometry": {
                 "type": "Point",
@@ -1396,50 +1723,62 @@
         {
             "type": "Feature",
             "properties": {
-                "res_com": "M1",
-                "label": "Les Sablons"
+                "label": "Les Sablons",
+                "lines": [
+                    "M1"
+                ],
+                "color": "M1"
             },
             "geometry": {
                 "type": "Point",
                 "coordinates": [
                     2.271686721050983,
-                    48.881191520586071
+                    48.88119152058607
                 ]
             }
         },
         {
             "type": "Feature",
             "properties": {
-                "res_com": "M2",
-                "label": "Ménilmontant"
+                "label": "Ménilmontant",
+                "lines": [
+                    "M2"
+                ],
+                "color": "M2"
             },
             "geometry": {
                 "type": "Point",
                 "coordinates": [
                     2.383383250455203,
-                    48.866800035098017
+                    48.86680003509802
                 ]
             }
         },
         {
             "type": "Feature",
             "properties": {
-                "res_com": "M2",
-                "label": "La Chapelle"
+                "label": "La Chapelle",
+                "lines": [
+                    "M2"
+                ],
+                "color": "M2"
             },
             "geometry": {
                 "type": "Point",
                 "coordinates": [
                     2.360491318526145,
-                    48.884398795153338
+                    48.88439879515334
                 ]
             }
         },
         {
             "type": "Feature",
             "properties": {
-                "res_com": "M3",
-                "label": "Sentier"
+                "label": "Sentier",
+                "lines": [
+                    "M3"
+                ],
+                "color": "M3"
             },
             "geometry": {
                 "type": "Point",
@@ -1452,8 +1791,12 @@
         {
             "type": "Feature",
             "properties": {
-                "res_com": "M2 \/ M3",
-                "label": "Villiers"
+                "label": "Villiers",
+                "lines": [
+                    "M2",
+                    "M3"
+                ],
+                "color": "connection"
             },
             "geometry": {
                 "type": "Point",
@@ -1466,78 +1809,96 @@
         {
             "type": "Feature",
             "properties": {
-                "res_com": "M4",
-                "label": "Château Rouge"
+                "label": "Château Rouge",
+                "lines": [
+                    "M4"
+                ],
+                "color": "M4"
             },
             "geometry": {
                 "type": "Point",
                 "coordinates": [
                     2.349694082236433,
-                    48.887374907855822
+                    48.88737490785582
                 ]
             }
         },
         {
             "type": "Feature",
             "properties": {
-                "res_com": "M4",
-                "label": "Saint-Placide"
+                "label": "Saint-Placide",
+                "lines": [
+                    "M4"
+                ],
+                "color": "M4"
             },
             "geometry": {
                 "type": "Point",
                 "coordinates": [
                     2.326792785039299,
-                    48.846878237952133
+                    48.84687823795213
                 ]
             }
         },
         {
             "type": "Feature",
             "properties": {
-                "res_com": "M5",
-                "label": "Hoche"
+                "label": "Hoche",
+                "lines": [
+                    "M5"
+                ],
+                "color": "M5"
             },
             "geometry": {
                 "type": "Point",
                 "coordinates": [
                     2.402352146617702,
-                    48.891228594116349
+                    48.89122859411635
                 ]
             }
         },
         {
             "type": "Feature",
             "properties": {
-                "res_com": "M5",
-                "label": "Bréguet-Sabin"
+                "label": "Bréguet-Sabin",
+                "lines": [
+                    "M5"
+                ],
+                "color": "M5"
             },
             "geometry": {
                 "type": "Point",
                 "coordinates": [
                     2.370209341096383,
-                    48.856140712960752
+                    48.85614071296075
                 ]
             }
         },
         {
             "type": "Feature",
             "properties": {
-                "res_com": "M5",
-                "label": "Quai de la Rapée"
+                "label": "Quai de la Rapée",
+                "lines": [
+                    "M5"
+                ],
+                "color": "M5"
             },
             "geometry": {
                 "type": "Point",
                 "coordinates": [
                     2.365873466648537,
-                    48.846515406876861
+                    48.84651540687686
                 ]
             }
         },
         {
             "type": "Feature",
             "properties": {
-                "res_com": "M9",
-                "label": "Buzenval"
+                "label": "Buzenval",
+                "lines": [
+                    "M9"
+                ],
+                "color": "M9"
             },
             "geometry": {
                 "type": "Point",
@@ -1550,22 +1911,28 @@
         {
             "type": "Feature",
             "properties": {
-                "res_com": "M10",
-                "label": "Av. Émile Zola"
+                "label": "Av. Émile Zola",
+                "lines": [
+                    "M10"
+                ],
+                "color": "M10"
             },
             "geometry": {
                 "type": "Point",
                 "coordinates": [
                     2.295420478027581,
-                    48.847019581880978
+                    48.84701958188098
                 ]
             }
         },
         {
             "type": "Feature",
             "properties": {
-                "res_com": "M10",
-                "label": "Mabillon"
+                "label": "Mabillon",
+                "lines": [
+                    "M10"
+                ],
+                "color": "M10"
             },
             "geometry": {
                 "type": "Point",
@@ -1578,92 +1945,119 @@
         {
             "type": "Feature",
             "properties": {
-                "res_com": "M7 \/ M10",
-                "label": "Jussieu"
+                "label": "Jussieu",
+                "lines": [
+                    "M7",
+                    "M10"
+                ],
+                "color": "connection"
             },
             "geometry": {
                 "type": "Point",
                 "coordinates": [
                     2.354917983696272,
-                    48.846151123080602
+                    48.8461511230806
                 ]
             }
         },
         {
             "type": "Feature",
             "properties": {
-                "res_com": "M11",
-                "label": "Mairie des Lilas"
+                "label": "Mairie des Lilas",
+                "lines": [
+                    "M11"
+                ],
+                "color": "M11"
             },
             "geometry": {
                 "type": "Point",
                 "coordinates": [
                     2.416479643671439,
-                    48.879761253997202
+                    48.8797612539972
                 ]
             }
         },
         {
             "type": "Feature",
             "properties": {
-                "res_com": "M11",
-                "label": "Pyrénées"
+                "label": "Pyrénées",
+                "lines": [
+                    "M11"
+                ],
+                "color": "M11"
             },
             "geometry": {
                 "type": "Point",
                 "coordinates": [
                     2.385316215101792,
-                    48.873881854158157
+                    48.87388185415816
                 ]
             }
         },
         {
             "type": "Feature",
             "properties": {
-                "res_com": "M2 \/ M11",
-                "label": "Belleville"
+                "label": "Belleville",
+                "lines": [
+                    "M2",
+                    "M11"
+                ],
+                "color": "connection"
             },
             "geometry": {
                 "type": "Point",
                 "coordinates": [
                     2.377029776704534,
-                    48.871993691760203
+                    48.8719936917602
                 ]
             }
         },
         {
             "type": "Feature",
             "properties": {
-                "res_com": "M1 \/ M4 \/ M7 \/ M11 \/ M14",
-                "label": "Châtelet"
+                "label": "Châtelet",
+                "lines": [
+                    "M1",
+                    "M4",
+                    "M7",
+                    "M11",
+                    "M14"
+                ],
+                "color": "connection"
             },
             "geometry": {
                 "type": "Point",
                 "coordinates": [
                     2.347625155718968,
-                    48.858061862276969
+                    48.85806186227697
                 ]
             }
         },
         {
             "type": "Feature",
             "properties": {
-                "res_com": "M12",
-                "label": "Convention"
+                "label": "Convention",
+                "lines": [
+                    "M12"
+                ],
+                "color": "M12"
             },
             "geometry": {
                 "type": "Point",
                 "coordinates": [
                     2.296630337820979,
-                    48.837307491852258
+                    48.83730749185226
                 ]
             }
         },
         {
             "type": "Feature",
             "properties": {
-                "res_com": "M12",
-                "label": "Rennes"
+                "label": "Rennes",
+                "lines": [
+                    "M12"
+                ],
+                "color": "M12"
             },
             "geometry": {
                 "type": "Point",
@@ -1676,8 +2070,11 @@
         {
             "type": "Feature",
             "properties": {
-                "res_com": "M12",
-                "label": "Saint-Georges"
+                "label": "Saint-Georges",
+                "lines": [
+                    "M12"
+                ],
+                "color": "M12"
             },
             "geometry": {
                 "type": "Point",
@@ -1690,36 +2087,45 @@
         {
             "type": "Feature",
             "properties": {
-                "res_com": "M14",
-                "label": "Cour St-Émilion"
+                "label": "Cour St-Émilion",
+                "lines": [
+                    "M14"
+                ],
+                "color": "M14"
             },
             "geometry": {
                 "type": "Point",
                 "coordinates": [
                     2.386632402066985,
-                    48.833338559251672
+                    48.83333855925167
                 ]
             }
         },
         {
             "type": "Feature",
             "properties": {
-                "res_com": "M13",
-                "label": "Malakoff-Rue Étienne Dolet"
+                "label": "Malakoff-Rue Étienne Dolet",
+                "lines": [
+                    "M13"
+                ],
+                "color": "M13"
             },
             "geometry": {
                 "type": "Point",
                 "coordinates": [
                     2.297077796960862,
-                    48.815307532099553
+                    48.81530753209955
                 ]
             }
         },
         {
             "type": "Feature",
             "properties": {
-                "res_com": "M13",
-                "label": "Liège"
+                "label": "Liège",
+                "lines": [
+                    "M13"
+                ],
+                "color": "M13"
             },
             "geometry": {
                 "type": "Point",
@@ -1732,8 +2138,11 @@
         {
             "type": "Feature",
             "properties": {
-                "res_com": "M13",
-                "label": "Mairie de Saint-Ouen"
+                "label": "Mairie de Saint-Ouen",
+                "lines": [
+                    "M13"
+                ],
+                "color": "M13"
             },
             "geometry": {
                 "type": "Point",
@@ -1746,8 +2155,11 @@
         {
             "type": "Feature",
             "properties": {
-                "res_com": "M13",
-                "label": "Carrefour Pleyel"
+                "label": "Carrefour Pleyel",
+                "lines": [
+                    "M13"
+                ],
+                "color": "M13"
             },
             "geometry": {
                 "type": "Point",
@@ -1760,8 +2172,13 @@
         {
             "type": "Feature",
             "properties": {
-                "res_com": "M5 \/ M6 \/ M7",
-                "label": "Place d'Italie"
+                "label": "Place d'Italie",
+                "lines": [
+                    "M5",
+                    "M6",
+                    "M7"
+                ],
+                "color": "connection"
             },
             "geometry": {
                 "type": "Point",
@@ -1774,8 +2191,11 @@
         {
             "type": "Feature",
             "properties": {
-                "res_com": "M6",
-                "label": "Dupleix"
+                "label": "Dupleix",
+                "lines": [
+                    "M6"
+                ],
+                "color": "M6"
             },
             "geometry": {
                 "type": "Point",
@@ -1788,8 +2208,11 @@
         {
             "type": "Feature",
             "properties": {
-                "res_com": "M6",
-                "label": "Passy"
+                "label": "Passy",
+                "lines": [
+                    "M6"
+                ],
+                "color": "M6"
             },
             "geometry": {
                 "type": "Point",
@@ -1802,64 +2225,80 @@
         {
             "type": "Feature",
             "properties": {
-                "res_com": "M6",
-                "label": "Kléber"
+                "label": "Kléber",
+                "lines": [
+                    "M6"
+                ],
+                "color": "M6"
             },
             "geometry": {
                 "type": "Point",
                 "coordinates": [
                     2.293524290341821,
-                    48.871649769143531
+                    48.87164976914353
                 ]
             }
         },
         {
             "type": "Feature",
             "properties": {
-                "res_com": "M7",
-                "label": "Fort d'Aubervilliers"
+                "label": "Fort d'Aubervilliers",
+                "lines": [
+                    "M7"
+                ],
+                "color": "M7"
             },
             "geometry": {
                 "type": "Point",
                 "coordinates": [
                     2.404409088781864,
-                    48.914949757276219
+                    48.91494975727622
                 ]
             }
         },
         {
             "type": "Feature",
             "properties": {
-                "res_com": "M7",
-                "label": "Château-Landon"
+                "label": "Château-Landon",
+                "lines": [
+                    "M7"
+                ],
+                "color": "M7"
             },
             "geometry": {
                 "type": "Point",
                 "coordinates": [
                     2.362160070559614,
-                    48.878565625792334
+                    48.87856562579233
                 ]
             }
         },
         {
             "type": "Feature",
             "properties": {
-                "res_com": "M7",
-                "label": "Poissonnière"
+                "label": "Poissonnière",
+                "lines": [
+                    "M7"
+                ],
+                "color": "M7"
             },
             "geometry": {
                 "type": "Point",
                 "coordinates": [
                     2.349293901112603,
-                    48.877236319129189
+                    48.87723631912919
                 ]
             }
         },
         {
             "type": "Feature",
             "properties": {
-                "res_com": "M7 \/ M14",
-                "label": "Pyramides"
+                "label": "Pyramides",
+                "lines": [
+                    "M7",
+                    "M14"
+                ],
+                "color": "connection"
             },
             "geometry": {
                 "type": "Point",
@@ -1872,148 +2311,184 @@
         {
             "type": "Feature",
             "properties": {
-                "res_com": "M7",
-                "label": "Censier-Daubenton"
+                "label": "Censier-Daubenton",
+                "lines": [
+                    "M7"
+                ],
+                "color": "M7"
             },
             "geometry": {
                 "type": "Point",
                 "coordinates": [
                     2.351739487166927,
-                    48.840486652641196
+                    48.8404866526412
                 ]
             }
         },
         {
             "type": "Feature",
             "properties": {
-                "res_com": "M7",
-                "label": "Maison Blanche"
+                "label": "Maison Blanche",
+                "lines": [
+                    "M7"
+                ],
+                "color": "M7"
             },
             "geometry": {
                 "type": "Point",
                 "coordinates": [
                     2.358473883887533,
-                    48.822437831887527
+                    48.82243783188753
                 ]
             }
         },
         {
             "type": "Feature",
             "properties": {
-                "res_com": "M8",
-                "label": "École Militaire"
+                "label": "École Militaire",
+                "lines": [
+                    "M8"
+                ],
+                "color": "M8"
             },
             "geometry": {
                 "type": "Point",
                 "coordinates": [
                     2.306097403704285,
-                    48.854682156887741
+                    48.85468215688774
                 ]
             }
         },
         {
             "type": "Feature",
             "properties": {
-                "res_com": "M8",
-                "label": "La Tour Maubourg"
+                "label": "La Tour Maubourg",
+                "lines": [
+                    "M8"
+                ],
+                "color": "M8"
             },
             "geometry": {
                 "type": "Point",
                 "coordinates": [
                     2.310565960946846,
-                    48.857725412893451
+                    48.85772541289345
                 ]
             }
         },
         {
             "type": "Feature",
             "properties": {
-                "res_com": "M8 \/ M9",
-                "label": "Grands Boulevards"
+                "label": "Grands Boulevards",
+                "lines": [
+                    "M8",
+                    "M9"
+                ],
+                "color": "connection"
             },
             "geometry": {
                 "type": "Point",
                 "coordinates": [
                     2.343154773075233,
-                    48.871497739350033
+                    48.87149773935003
                 ]
             }
         },
         {
             "type": "Feature",
             "properties": {
-                "res_com": "M8 \/ M9",
-                "label": "Bonne Nouvelle"
+                "label": "Bonne Nouvelle",
+                "lines": [
+                    "M8",
+                    "M9"
+                ],
+                "color": "connection"
             },
             "geometry": {
                 "type": "Point",
                 "coordinates": [
                     2.350497971863092,
-                    48.870164200900561
+                    48.87016420090056
                 ]
             }
         },
         {
             "type": "Feature",
             "properties": {
-                "res_com": "M9",
-                "label": "Pont de Sèvres"
+                "label": "Pont de Sèvres",
+                "lines": [
+                    "M9"
+                ],
+                "color": "M9"
             },
             "geometry": {
                 "type": "Point",
                 "coordinates": [
                     2.230799591317221,
-                    48.829674843838752
+                    48.82967484383875
                 ]
             }
         },
         {
             "type": "Feature",
             "properties": {
-                "res_com": "M1 \/ M11",
-                "label": "Hôtel de Ville"
+                "label": "Hôtel de Ville",
+                "lines": [
+                    "M1",
+                    "M11"
+                ],
+                "color": "connection"
             },
             "geometry": {
                 "type": "Point",
                 "coordinates": [
                     2.351292209334574,
-                    48.857551553296517
+                    48.85755155329652
                 ]
             }
         },
         {
             "type": "Feature",
             "properties": {
-                "res_com": "M1",
-                "label": "Pont de Neuilly"
+                "label": "Pont de Neuilly",
+                "lines": [
+                    "M1"
+                ],
+                "color": "M1"
             },
             "geometry": {
                 "type": "Point",
                 "coordinates": [
                     2.260515077888117,
-                    48.884708201322532
+                    48.88470820132253
                 ]
             }
         },
         {
             "type": "Feature",
             "properties": {
-                "res_com": "M2",
-                "label": "Avron"
+                "label": "Avron",
+                "lines": [
+                    "M2"
+                ],
+                "color": "M2"
             },
             "geometry": {
                 "type": "Point",
                 "coordinates": [
                     2.398302344267162,
-                    48.851510278164362
+                    48.85151027816436
                 ]
             }
         },
         {
             "type": "Feature",
             "properties": {
-                "res_com": "M2",
-                "label": "Blanche"
+                "label": "Blanche",
+                "lines": [
+                    "M2"
+                ],
+                "color": "M2"
             },
             "geometry": {
                 "type": "Point",
@@ -2026,8 +2501,11 @@
         {
             "type": "Feature",
             "properties": {
-                "res_com": "M2",
-                "label": "Courcelles"
+                "label": "Courcelles",
+                "lines": [
+                    "M2"
+                ],
+                "color": "M2"
             },
             "geometry": {
                 "type": "Point",
@@ -2040,8 +2518,11 @@
         {
             "type": "Feature",
             "properties": {
-                "res_com": "M3",
-                "label": "Gallieni"
+                "label": "Gallieni",
+                "lines": [
+                    "M3"
+                ],
+                "color": "M3"
             },
             "geometry": {
                 "type": "Point",
@@ -2054,8 +2535,11 @@
         {
             "type": "Feature",
             "properties": {
-                "res_com": "M3",
-                "label": "Bourse"
+                "label": "Bourse",
+                "lines": [
+                    "M3"
+                ],
+                "color": "M3"
             },
             "geometry": {
                 "type": "Point",
@@ -2068,8 +2552,11 @@
         {
             "type": "Feature",
             "properties": {
-                "res_com": "M3",
-                "label": "Wagram"
+                "label": "Wagram",
+                "lines": [
+                    "M3"
+                ],
+                "color": "M3"
             },
             "geometry": {
                 "type": "Point",
@@ -2082,78 +2569,96 @@
         {
             "type": "Feature",
             "properties": {
-                "res_com": "M3",
-                "label": "Porte de Champerret"
+                "label": "Porte de Champerret",
+                "lines": [
+                    "M3"
+                ],
+                "color": "M3"
             },
             "geometry": {
                 "type": "Point",
                 "coordinates": [
                     2.292582314102913,
-                    48.885793105231002
+                    48.885793105231
                 ]
             }
         },
         {
             "type": "Feature",
             "properties": {
-                "res_com": "M3",
-                "label": "Anatole France"
+                "label": "Anatole France",
+                "lines": [
+                    "M3"
+                ],
+                "color": "M3"
             },
             "geometry": {
                 "type": "Point",
                 "coordinates": [
                     2.285009502746195,
-                    48.892082785974793
+                    48.89208278597479
                 ]
             }
         },
         {
             "type": "Feature",
             "properties": {
-                "res_com": "M4",
-                "label": "Simplon"
+                "label": "Simplon",
+                "lines": [
+                    "M4"
+                ],
+                "color": "M4"
             },
             "geometry": {
                 "type": "Point",
                 "coordinates": [
                     2.347765501718976,
-                    48.893941388029113
+                    48.89394138802911
                 ]
             }
         },
         {
             "type": "Feature",
             "properties": {
-                "res_com": "M4",
-                "label": "Château d'Eau"
+                "label": "Château d'Eau",
+                "lines": [
+                    "M4"
+                ],
+                "color": "M4"
             },
             "geometry": {
                 "type": "Point",
                 "coordinates": [
                     2.356044907694412,
-                    48.872424912690441
+                    48.87242491269044
                 ]
             }
         },
         {
             "type": "Feature",
             "properties": {
-                "res_com": "M4",
-                "label": "Alésia"
+                "label": "Alésia",
+                "lines": [
+                    "M4"
+                ],
+                "color": "M4"
             },
             "geometry": {
                 "type": "Point",
                 "coordinates": [
                     2.327164649607824,
-                    48.828188476313507
+                    48.82818847631351
                 ]
             }
         },
         {
             "type": "Feature",
             "properties": {
-                "res_com": "M5",
-                "label": "Bobigny-Pantin - Raymond Queneau"
+                "label": "Bobigny-Pantin - Raymond Queneau",
+                "lines": [
+                    "M5"
+                ],
+                "color": "M5"
             },
             "geometry": {
                 "type": "Point",
@@ -2166,8 +2671,11 @@
         {
             "type": "Feature",
             "properties": {
-                "res_com": "M5",
-                "label": "Ourcq"
+                "label": "Ourcq",
+                "lines": [
+                    "M5"
+                ],
+                "color": "M5"
             },
             "geometry": {
                 "type": "Point",
@@ -2180,36 +2688,47 @@
         {
             "type": "Feature",
             "properties": {
-                "res_com": "M5",
-                "label": "Laumière"
+                "label": "Laumière",
+                "lines": [
+                    "M5"
+                ],
+                "color": "M5"
             },
             "geometry": {
                 "type": "Point",
                 "coordinates": [
                     2.3796630815606,
-                    48.885216183015046
+                    48.88521618301505
                 ]
             }
         },
         {
             "type": "Feature",
             "properties": {
-                "res_com": "M5",
-                "label": "Richard Lenoir"
+                "label": "Richard Lenoir",
+                "lines": [
+                    "M5"
+                ],
+                "color": "M5"
             },
             "geometry": {
                 "type": "Point",
                 "coordinates": [
                     2.371913978759671,
-                    48.859873621665599
+                    48.8598736216656
                 ]
             }
         },
         {
             "type": "Feature",
             "properties": {
-                "res_com": "M1 \/ M5 \/ M8",
-                "label": "Bastille"
+                "label": "Bastille",
+                "lines": [
+                    "M1",
+                    "M5",
+                    "M8"
+                ],
+                "color": "connection"
             },
             "geometry": {
                 "type": "Point",
@@ -2222,8 +2741,12 @@
         {
             "type": "Feature",
             "properties": {
-                "res_com": "M1 \/ M7",
-                "label": "Palais Royal-Musée du Louvre"
+                "label": "Palais Royal-Musée du Louvre",
+                "lines": [
+                    "M1",
+                    "M7"
+                ],
+                "color": "connection"
             },
             "geometry": {
                 "type": "Point",
@@ -2236,64 +2759,82 @@
         {
             "type": "Feature",
             "properties": {
-                "res_com": "M9",
-                "label": "La Muette"
+                "label": "La Muette",
+                "lines": [
+                    "M9"
+                ],
+                "color": "M9"
             },
             "geometry": {
                 "type": "Point",
                 "coordinates": [
                     2.27415462837367,
-                    48.858046055376207
+                    48.85804605537621
                 ]
             }
         },
         {
             "type": "Feature",
             "properties": {
-                "res_com": "M6 \/ M9",
-                "label": "Trocadéro"
+                "label": "Trocadéro",
+                "lines": [
+                    "M6",
+                    "M9"
+                ],
+                "color": "connection"
             },
             "geometry": {
                 "type": "Point",
                 "coordinates": [
                     2.287166875502503,
-                    48.863073782225257
+                    48.86307378222526
                 ]
             }
         },
         {
             "type": "Feature",
             "properties": {
-                "res_com": "M9",
-                "label": "Alma-Marceau"
+                "label": "Alma-Marceau",
+                "lines": [
+                    "M9"
+                ],
+                "color": "M9"
             },
             "geometry": {
                 "type": "Point",
                 "coordinates": [
                     2.300991003495585,
-                    48.864766844971768
+                    48.86476684497177
                 ]
             }
         },
         {
             "type": "Feature",
             "properties": {
-                "res_com": "M9",
-                "label": "Saint-Philippe du Roule"
+                "label": "Saint-Philippe du Roule",
+                "lines": [
+                    "M9"
+                ],
+                "color": "M9"
             },
             "geometry": {
                 "type": "Point",
                 "coordinates": [
                     2.310038344619937,
-                    48.872422383651013
+                    48.87242238365101
                 ]
             }
         },
         {
             "type": "Feature",
             "properties": {
-                "res_com": "M4 \/ M8 \/ M9",
-                "label": "Strasbourg-Saint-Denis"
+                "label": "Strasbourg-Saint-Denis",
+                "lines": [
+                    "M4",
+                    "M8",
+                    "M9"
+                ],
+                "color": "connection"
             },
             "geometry": {
                 "type": "Point",
@@ -2306,22 +2847,28 @@
         {
             "type": "Feature",
             "properties": {
-                "res_com": "M9",
-                "label": "Voltaire"
+                "label": "Voltaire",
+                "lines": [
+                    "M9"
+                ],
+                "color": "M9"
             },
             "geometry": {
                 "type": "Point",
                 "coordinates": [
                     2.38071878585627,
-                    48.857453722681321
+                    48.85745372268132
                 ]
             }
         },
         {
             "type": "Feature",
             "properties": {
-                "res_com": "M10",
-                "label": "Boulogne-Pont de Saint-Cloud"
+                "label": "Boulogne-Pont de Saint-Cloud",
+                "lines": [
+                    "M10"
+                ],
+                "color": "M10"
             },
             "geometry": {
                 "type": "Point",
@@ -2334,8 +2881,12 @@
         {
             "type": "Feature",
             "properties": {
-                "res_com": "M9 \/ M10",
-                "label": "Michel-Ange-Auteuil"
+                "label": "Michel-Ange-Auteuil",
+                "lines": [
+                    "M9",
+                    "M10"
+                ],
+                "color": "connection"
             },
             "geometry": {
                 "type": "Point",
@@ -2348,22 +2899,28 @@
         {
             "type": "Feature",
             "properties": {
-                "res_com": "M10",
-                "label": "Chardon-Lagache"
+                "label": "Chardon-Lagache",
+                "lines": [
+                    "M10"
+                ],
+                "color": "M10"
             },
             "geometry": {
                 "type": "Point",
                 "coordinates": [
                     2.266441540369508,
-                    48.845204702673513
+                    48.84520470267351
                 ]
             }
         },
         {
             "type": "Feature",
             "properties": {
-                "res_com": "M11",
-                "label": "Rambuteau"
+                "label": "Rambuteau",
+                "lines": [
+                    "M11"
+                ],
+                "color": "M11"
             },
             "geometry": {
                 "type": "Point",
@@ -2376,36 +2933,46 @@
         {
             "type": "Feature",
             "properties": {
-                "res_com": "M12",
-                "label": "Vaugirard"
+                "label": "Vaugirard",
+                "lines": [
+                    "M12"
+                ],
+                "color": "M12"
             },
             "geometry": {
                 "type": "Point",
                 "coordinates": [
                     2.301107514879988,
-                    48.839516585394527
+                    48.83951658539453
                 ]
             }
         },
         {
             "type": "Feature",
             "properties": {
-                "res_com": "M12",
-                "label": "Falguière"
+                "label": "Falguière",
+                "lines": [
+                    "M12"
+                ],
+                "color": "M12"
             },
             "geometry": {
                 "type": "Point",
                 "coordinates": [
                     2.317852783041332,
-                    48.844470141295858
+                    48.84447014129586
                 ]
             }
         },
         {
             "type": "Feature",
             "properties": {
-                "res_com": "M4 \/ M12",
-                "label": "Marcadet-Poissonniers"
+                "label": "Marcadet-Poissonniers",
+                "lines": [
+                    "M4",
+                    "M12"
+                ],
+                "color": "connection"
             },
             "geometry": {
                 "type": "Point",
@@ -2418,36 +2985,45 @@
         {
             "type": "Feature",
             "properties": {
-                "res_com": "M12",
-                "label": "Marx Dormoy"
+                "label": "Marx Dormoy",
+                "lines": [
+                    "M12"
+                ],
+                "color": "M12"
             },
             "geometry": {
                 "type": "Point",
                 "coordinates": [
                     2.359995766383568,
-                    48.890485455645859
+                    48.89048545564586
                 ]
             }
         },
         {
             "type": "Feature",
             "properties": {
-                "res_com": "M13",
-                "label": "Gabriel Péri"
+                "label": "Gabriel Péri",
+                "lines": [
+                    "M13"
+                ],
+                "color": "M13"
             },
             "geometry": {
                 "type": "Point",
                 "coordinates": [
                     2.294685111702555,
-                    48.916382309922099
+                    48.9163823099221
                 ]
             }
         },
         {
             "type": "Feature",
             "properties": {
-                "res_com": "M13",
-                "label": "Plaisance"
+                "label": "Plaisance",
+                "lines": [
+                    "M13"
+                ],
+                "color": "M13"
             },
             "geometry": {
                 "type": "Point",
@@ -2460,8 +3036,11 @@
         {
             "type": "Feature",
             "properties": {
-                "res_com": "M13",
-                "label": "Pernéty"
+                "label": "Pernéty",
+                "lines": [
+                    "M13"
+                ],
+                "color": "M13"
             },
             "geometry": {
                 "type": "Point",
@@ -2474,22 +3053,28 @@
         {
             "type": "Feature",
             "properties": {
-                "res_com": "M13",
-                "label": "Gaîté"
+                "label": "Gaîté",
+                "lines": [
+                    "M13"
+                ],
+                "color": "M13"
             },
             "geometry": {
                 "type": "Point",
                 "coordinates": [
                     2.322491748450549,
-                    48.838631647136459
+                    48.83863164713646
                 ]
             }
         },
         {
             "type": "Feature",
             "properties": {
-                "res_com": "M7b",
-                "label": "Pré Saint-Gervais"
+                "label": "Pré Saint-Gervais",
+                "lines": [
+                    "M7b"
+                ],
+                "color": "M7b"
             },
             "geometry": {
                 "type": "Point",
@@ -2502,36 +3087,47 @@
         {
             "type": "Feature",
             "properties": {
-                "res_com": "M7b",
-                "label": "Bolivar"
+                "label": "Bolivar",
+                "lines": [
+                    "M7b"
+                ],
+                "color": "M7b"
             },
             "geometry": {
                 "type": "Point",
                 "coordinates": [
                     2.374147153839052,
-                    48.880821261376127
+                    48.88082126137613
                 ]
             }
         },
         {
             "type": "Feature",
             "properties": {
-                "res_com": "M2 \/ M5 \/ M7b",
-                "label": "Jaurès"
+                "label": "Jaurès",
+                "lines": [
+                    "M2",
+                    "M5",
+                    "M7b"
+                ],
+                "color": "connection"
             },
             "geometry": {
                 "type": "Point",
                 "coordinates": [
                     2.370122312281105,
-                    48.882738132784247
+                    48.88273813278425
                 ]
             }
         },
         {
             "type": "Feature",
             "properties": {
-                "res_com": "M5",
-                "label": "Campo-Formio"
+                "label": "Campo-Formio",
+                "lines": [
+                    "M5"
+                ],
+                "color": "M5"
             },
             "geometry": {
                 "type": "Point",
@@ -2544,8 +3140,12 @@
         {
             "type": "Feature",
             "properties": {
-                "res_com": "M6 \/ M8",
-                "label": "Daumesnil"
+                "label": "Daumesnil",
+                "lines": [
+                    "M6",
+                    "M8"
+                ],
+                "color": "connection"
             },
             "geometry": {
                 "type": "Point",
@@ -2558,8 +3158,11 @@
         {
             "type": "Feature",
             "properties": {
-                "res_com": "M6",
-                "label": "Dugommier"
+                "label": "Dugommier",
+                "lines": [
+                    "M6"
+                ],
+                "color": "M6"
             },
             "geometry": {
                 "type": "Point",
@@ -2572,8 +3175,11 @@
         {
             "type": "Feature",
             "properties": {
-                "res_com": "M6",
-                "label": "Quai de la Gare"
+                "label": "Quai de la Gare",
+                "lines": [
+                    "M6"
+                ],
+                "color": "M6"
             },
             "geometry": {
                 "type": "Point",
@@ -2586,8 +3192,11 @@
         {
             "type": "Feature",
             "properties": {
-                "res_com": "M6",
-                "label": "Edgar Quinet"
+                "label": "Edgar Quinet",
+                "lines": [
+                    "M6"
+                ],
+                "color": "M6"
             },
             "geometry": {
                 "type": "Point",
@@ -2600,120 +3209,148 @@
         {
             "type": "Feature",
             "properties": {
-                "res_com": "M6",
-                "label": "Sèvres-Lecourbe"
+                "label": "Sèvres-Lecourbe",
+                "lines": [
+                    "M6"
+                ],
+                "color": "M6"
             },
             "geometry": {
                 "type": "Point",
                 "coordinates": [
                     2.309531492823514,
-                    48.845626966755042
+                    48.84562696675504
                 ]
             }
         },
         {
             "type": "Feature",
             "properties": {
-                "res_com": "M6",
-                "label": "Cambronne"
+                "label": "Cambronne",
+                "lines": [
+                    "M6"
+                ],
+                "color": "M6"
             },
             "geometry": {
                 "type": "Point",
                 "coordinates": [
                     2.302968296454798,
-                    48.847507081988873
+                    48.84750708198887
                 ]
             }
         },
         {
             "type": "Feature",
             "properties": {
-                "res_com": "M6",
-                "label": "Boissière"
+                "label": "Boissière",
+                "lines": [
+                    "M6"
+                ],
+                "color": "M6"
             },
             "geometry": {
                 "type": "Point",
                 "coordinates": [
                     2.290058833580487,
-                    48.866983109449478
+                    48.86698310944948
                 ]
             }
         },
         {
             "type": "Feature",
             "properties": {
-                "res_com": "M7",
-                "label": "Aubervilliers Pantin Quatre Chemins"
+                "label": "Aubervilliers Pantin Quatre Chemins",
+                "lines": [
+                    "M7"
+                ],
+                "color": "M7"
             },
             "geometry": {
                 "type": "Point",
                 "coordinates": [
                     2.39228705963185,
-                    48.903759931070141
+                    48.90375993107014
                 ]
             }
         },
         {
             "type": "Feature",
             "properties": {
-                "res_com": "M7 \/ M7b",
-                "label": "Louis Blanc"
+                "label": "Louis Blanc",
+                "lines": [
+                    "M7",
+                    "M7b"
+                ],
+                "color": "connection"
             },
             "geometry": {
                 "type": "Point",
                 "coordinates": [
                     2.36592103710407,
-                    48.881584251008249
+                    48.88158425100825
                 ]
             }
         },
         {
             "type": "Feature",
             "properties": {
-                "res_com": "M7",
-                "label": "Les Gobelins"
+                "label": "Les Gobelins",
+                "lines": [
+                    "M7"
+                ],
+                "color": "M7"
             },
             "geometry": {
                 "type": "Point",
                 "coordinates": [
                     2.352588922866105,
-                    48.835863487762389
+                    48.83586348776239
                 ]
             }
         },
         {
             "type": "Feature",
             "properties": {
-                "res_com": "M7",
-                "label": "Mairie d'Ivry"
+                "label": "Mairie d'Ivry",
+                "lines": [
+                    "M7"
+                ],
+                "color": "M7"
             },
             "geometry": {
                 "type": "Point",
                 "coordinates": [
                     2.383551479649113,
-                    48.811099197711528
+                    48.81109919771153
                 ]
             }
         },
         {
             "type": "Feature",
             "properties": {
-                "res_com": "M7",
-                "label": "Le Kremlin-Bicêtre"
+                "label": "Le Kremlin-Bicêtre",
+                "lines": [
+                    "M7"
+                ],
+                "color": "M7"
             },
             "geometry": {
                 "type": "Point",
                 "coordinates": [
                     2.362263387127349,
-                    48.810129957273929
+                    48.81012995727393
                 ]
             }
         },
         {
             "type": "Feature",
             "properties": {
-                "res_com": "M8",
-                "label": "Lourmel"
+                "label": "Lourmel",
+                "lines": [
+                    "M8"
+                ],
+                "color": "M8"
             },
             "geometry": {
                 "type": "Point",
@@ -2726,8 +3363,11 @@
         {
             "type": "Feature",
             "properties": {
-                "res_com": "M8",
-                "label": "Félix Faure"
+                "label": "Félix Faure",
+                "lines": [
+                    "M8"
+                ],
+                "color": "M8"
             },
             "geometry": {
                 "type": "Point",
@@ -2740,50 +3380,62 @@
         {
             "type": "Feature",
             "properties": {
-                "res_com": "M8",
-                "label": "Commerce"
+                "label": "Commerce",
+                "lines": [
+                    "M8"
+                ],
+                "color": "M8"
             },
             "geometry": {
                 "type": "Point",
                 "coordinates": [
                     2.293951963636534,
-                    48.844794764611088
+                    48.84479476461109
                 ]
             }
         },
         {
             "type": "Feature",
             "properties": {
-                "res_com": "M8",
-                "label": "Chemin Vert"
+                "label": "Chemin Vert",
+                "lines": [
+                    "M8"
+                ],
+                "color": "M8"
             },
             "geometry": {
                 "type": "Point",
                 "coordinates": [
                     2.368108290701383,
-                    48.857420037547151
+                    48.85742003754715
                 ]
             }
         },
         {
             "type": "Feature",
             "properties": {
-                "res_com": "M8",
-                "label": "Ledru-Rollin"
+                "label": "Ledru-Rollin",
+                "lines": [
+                    "M8"
+                ],
+                "color": "M8"
             },
             "geometry": {
                 "type": "Point",
                 "coordinates": [
                     2.376118774702071,
-                    48.851271126372332
+                    48.85127112637233
                 ]
             }
         },
         {
             "type": "Feature",
             "properties": {
-                "res_com": "M8",
-                "label": "Charenton-Écoles"
+                "label": "Charenton-Écoles",
+                "lines": [
+                    "M8"
+                ],
+                "color": "M8"
             },
             "geometry": {
                 "type": "Point",
@@ -2796,22 +3448,28 @@
         {
             "type": "Feature",
             "properties": {
-                "res_com": "M8",
-                "label": "Créteil-Université"
+                "label": "Créteil-Université",
+                "lines": [
+                    "M8"
+                ],
+                "color": "M8"
             },
             "geometry": {
                 "type": "Point",
                 "coordinates": [
                     2.450453177915302,
-                    48.789978310348928
+                    48.78997831034893
                 ]
             }
         },
         {
             "type": "Feature",
             "properties": {
-                "res_com": "M8",
-                "label": "Créteil-Préfecture"
+                "label": "Créteil-Préfecture",
+                "lines": [
+                    "M8"
+                ],
+                "color": "M8"
             },
             "geometry": {
                 "type": "Point",
@@ -2824,36 +3482,45 @@
         {
             "type": "Feature",
             "properties": {
-                "res_com": "M9",
-                "label": "Marcel Sembat"
+                "label": "Marcel Sembat",
+                "lines": [
+                    "M9"
+                ],
+                "color": "M9"
             },
             "geometry": {
                 "type": "Point",
                 "coordinates": [
                     2.243840595091187,
-                    48.833708850020479
+                    48.83370885002048
                 ]
             }
         },
         {
             "type": "Feature",
             "properties": {
-                "res_com": "M1",
-                "label": "Bérault"
+                "label": "Bérault",
+                "lines": [
+                    "M1"
+                ],
+                "color": "M1"
             },
             "geometry": {
                 "type": "Point",
                 "coordinates": [
                     2.428010396293927,
-                    48.845579067136661
+                    48.84557906713666
                 ]
             }
         },
         {
             "type": "Feature",
             "properties": {
-                "res_com": "M1",
-                "label": "Saint-Paul"
+                "label": "Saint-Paul",
+                "lines": [
+                    "M1"
+                ],
+                "color": "M1"
             },
             "geometry": {
                 "type": "Point",
@@ -2866,106 +3533,131 @@
         {
             "type": "Feature",
             "properties": {
-                "res_com": "M1",
-                "label": "Tuileries"
+                "label": "Tuileries",
+                "lines": [
+                    "M1"
+                ],
+                "color": "M1"
             },
             "geometry": {
                 "type": "Point",
                 "coordinates": [
                     2.330129877112861,
-                    48.864343778733911
+                    48.86434377873391
                 ]
             }
         },
         {
             "type": "Feature",
             "properties": {
-                "res_com": "M1 \/ M13",
-                "label": "Champs-Elysées-Clémenceau"
+                "label": "Champs-Elysées-Clémenceau",
+                "lines": [
+                    "M1",
+                    "M13"
+                ],
+                "color": "connection"
             },
             "geometry": {
                 "type": "Point",
                 "coordinates": [
                     2.31388193768216,
-                    48.867799734455403
+                    48.8677997344554
                 ]
             }
         },
         {
             "type": "Feature",
             "properties": {
-                "res_com": "M1",
-                "label": "Esplanade de la Défense"
+                "label": "Esplanade de la Défense",
+                "lines": [
+                    "M1"
+                ],
+                "color": "M1"
             },
             "geometry": {
                 "type": "Point",
                 "coordinates": [
                     2.247932435324862,
-                    48.888631217771177
+                    48.88863121777118
                 ]
             }
         },
         {
             "type": "Feature",
             "properties": {
-                "res_com": "M2",
-                "label": "Alexandre Dumas"
+                "label": "Alexandre Dumas",
+                "lines": [
+                    "M2"
+                ],
+                "color": "M2"
             },
             "geometry": {
                 "type": "Point",
                 "coordinates": [
                     2.394561944560314,
-                    48.856377357181543
+                    48.85637735718154
                 ]
             }
         },
         {
             "type": "Feature",
             "properties": {
-                "res_com": "M2",
-                "label": "Philippe Auguste"
+                "label": "Philippe Auguste",
+                "lines": [
+                    "M2"
+                ],
+                "color": "M2"
             },
             "geometry": {
                 "type": "Point",
                 "coordinates": [
                     2.389729852353504,
-                    48.858466549433743
+                    48.85846654943374
                 ]
             }
         },
         {
             "type": "Feature",
             "properties": {
-                "res_com": "M2",
-                "label": "Colonel Fabien"
+                "label": "Colonel Fabien",
+                "lines": [
+                    "M2"
+                ],
+                "color": "M2"
             },
             "geometry": {
                 "type": "Point",
                 "coordinates": [
                     2.370811395312745,
-                    48.877610187417851
+                    48.87761018741785
                 ]
             }
         },
         {
             "type": "Feature",
             "properties": {
-                "res_com": "M2",
-                "label": "Porte Dauphine"
+                "label": "Porte Dauphine",
+                "lines": [
+                    "M2"
+                ],
+                "color": "M2"
             },
             "geometry": {
                 "type": "Point",
                 "coordinates": [
                     2.277083017052586,
-                    48.871466578127652
+                    48.87146657812765
                 ]
             }
         },
         {
             "type": "Feature",
             "properties": {
-                "res_com": "M3",
-                "label": "Rue Saint-Maur"
+                "label": "Rue Saint-Maur",
+                "lines": [
+                    "M3"
+                ],
+                "color": "M3"
             },
             "geometry": {
                 "type": "Point",
@@ -2978,78 +3670,97 @@
         {
             "type": "Feature",
             "properties": {
-                "res_com": "M3",
-                "label": "Temple"
+                "label": "Temple",
+                "lines": [
+                    "M3"
+                ],
+                "color": "M3"
             },
             "geometry": {
                 "type": "Point",
                 "coordinates": [
                     2.361541532068171,
-                    48.866682680241318
+                    48.86668268024132
                 ]
             }
         },
         {
             "type": "Feature",
             "properties": {
-                "res_com": "M11",
-                "label": "Arts et Métiers"
+                "label": "Arts et Métiers",
+                "lines": [
+                    "M11"
+                ],
+                "color": "M11"
             },
             "geometry": {
                 "type": "Point",
                 "coordinates": [
                     2.356736756806098,
-                    48.865586477599692
+                    48.86558647759969
                 ]
             }
         },
         {
             "type": "Feature",
             "properties": {
-                "res_com": "M3",
-                "label": "Pont de Levallois-Bécon"
+                "label": "Pont de Levallois-Bécon",
+                "lines": [
+                    "M3"
+                ],
+                "color": "M3"
             },
             "geometry": {
                 "type": "Point",
                 "coordinates": [
                     2.279809586693102,
-                    48.897821067111323
+                    48.89782106711132
                 ]
             }
         },
         {
             "type": "Feature",
             "properties": {
-                "res_com": "M4",
-                "label": "Étienne Marcel"
+                "label": "Étienne Marcel",
+                "lines": [
+                    "M4"
+                ],
+                "color": "M4"
             },
             "geometry": {
                 "type": "Point",
                 "coordinates": [
                     2.348880656666388,
-                    48.863807438702779
+                    48.86380743870278
                 ]
             }
         },
         {
             "type": "Feature",
             "properties": {
-                "res_com": "M4",
-                "label": "Cité"
+                "label": "Cité",
+                "lines": [
+                    "M4"
+                ],
+                "color": "M4"
             },
             "geometry": {
                 "type": "Point",
                 "coordinates": [
                     2.347321318407715,
-                    48.854936380164673
+                    48.85493638016467
                 ]
             }
         },
         {
             "type": "Feature",
             "properties": {
-                "res_com": "M4 \/ M6",
-                "label": "Raspail"
+                "label": "Raspail",
+                "lines": [
+                    "M4",
+                    "M6"
+                ],
+                "color": "connection"
             },
             "geometry": {
                 "type": "Point",
@@ -3062,92 +3773,114 @@
         {
             "type": "Feature",
             "properties": {
-                "res_com": "M5",
-                "label": "Église de Pantin"
+                "label": "Église de Pantin",
+                "lines": [
+                    "M5"
+                ],
+                "color": "M5"
             },
             "geometry": {
                 "type": "Point",
                 "coordinates": [
                     2.41331313951059,
-                    48.893257589973892
+                    48.89325758997389
                 ]
             }
         },
         {
             "type": "Feature",
             "properties": {
-                "res_com": "M5",
-                "label": "Saint-Marcel"
+                "label": "Saint-Marcel",
+                "lines": [
+                    "M5"
+                ],
+                "color": "M5"
             },
             "geometry": {
                 "type": "Point",
                 "coordinates": [
                     2.360967166347492,
-                    48.838427296060978
+                    48.83842729606098
                 ]
             }
         },
         {
             "type": "Feature",
             "properties": {
-                "res_com": "M9",
-                "label": "Rue de la Pompe"
+                "label": "Rue de la Pompe",
+                "lines": [
+                    "M9"
+                ],
+                "color": "M9"
             },
             "geometry": {
                 "type": "Point",
                 "coordinates": [
                     2.278112562536507,
-                    48.863974445807578
+                    48.86397444580758
                 ]
             }
         },
         {
             "type": "Feature",
             "properties": {
-                "res_com": "M9",
-                "label": "Iéna"
+                "label": "Iéna",
+                "lines": [
+                    "M9"
+                ],
+                "color": "M9"
             },
             "geometry": {
                 "type": "Point",
                 "coordinates": [
                     2.294162014031211,
-                    48.864794064892159
+                    48.86479406489216
                 ]
             }
         },
         {
             "type": "Feature",
             "properties": {
-                "res_com": "M1 \/ M9",
-                "label": "Franklin-D.Roosevelt"
+                "label": "Franklin-D.Roosevelt",
+                "lines": [
+                    "M1",
+                    "M9"
+                ],
+                "color": "connection"
             },
             "geometry": {
                 "type": "Point",
                 "coordinates": [
                     2.309935388712292,
-                    48.869026527272908
+                    48.86902652727291
                 ]
             }
         },
         {
             "type": "Feature",
             "properties": {
-                "res_com": "M9",
-                "label": "Rue des Boulets"
+                "label": "Rue des Boulets",
+                "lines": [
+                    "M9"
+                ],
+                "color": "M9"
             },
             "geometry": {
                 "type": "Point",
                 "coordinates": [
                     2.389378127918613,
-                    48.852315427399169
+                    48.85231542739917
                 ]
             }
         },
         {
             "type": "Feature",
             "properties": {
-                "res_com": "M9",
-                "label": "Robespierre"
+                "label": "Robespierre",
+                "lines": [
+                    "M9"
+                ],
+                "color": "M9"
             },
             "geometry": {
                 "type": "Point",
@@ -3160,78 +3893,97 @@
         {
             "type": "Feature",
             "properties": {
-                "res_com": "M9",
-                "label": "Croix de Chavaux"
+                "label": "Croix de Chavaux",
+                "lines": [
+                    "M9"
+                ],
+                "color": "M9"
             },
             "geometry": {
                 "type": "Point",
                 "coordinates": [
                     2.43555571977294,
-                    48.857965592084589
+                    48.85796559208459
                 ]
             }
         },
         {
             "type": "Feature",
             "properties": {
-                "res_com": "M10",
-                "label": "Église d'Auteuil"
+                "label": "Église d'Auteuil",
+                "lines": [
+                    "M10"
+                ],
+                "color": "M10"
             },
             "geometry": {
                 "type": "Point",
                 "coordinates": [
                     2.269135872730268,
-                    48.847150055709768
+                    48.84715005570977
                 ]
             }
         },
         {
             "type": "Feature",
             "properties": {
-                "res_com": "M10",
-                "label": "Porte d'Auteuil"
+                "label": "Porte d'Auteuil",
+                "lines": [
+                    "M10"
+                ],
+                "color": "M10"
             },
             "geometry": {
                 "type": "Point",
                 "coordinates": [
                     2.257744680376012,
-                    48.847971540597712
+                    48.84797154059771
                 ]
             }
         },
         {
             "type": "Feature",
             "properties": {
-                "res_com": "M9 \/ M10",
-                "label": "Michel-Ange-Molitor"
+                "label": "Michel-Ange-Molitor",
+                "lines": [
+                    "M9",
+                    "M10"
+                ],
+                "color": "connection"
             },
             "geometry": {
                 "type": "Point",
                 "coordinates": [
                     2.261893641759714,
-                    48.845241194840931
+                    48.84524119484093
                 ]
             }
         },
         {
             "type": "Feature",
             "properties": {
-                "res_com": "M10",
-                "label": "Charles Michels"
+                "label": "Charles Michels",
+                "lines": [
+                    "M10"
+                ],
+                "color": "M10"
             },
             "geometry": {
                 "type": "Point",
                 "coordinates": [
                     2.285999222059007,
-                    48.846534636731192
+                    48.84653463673119
                 ]
             }
         },
         {
             "type": "Feature",
             "properties": {
-                "res_com": "M11",
-                "label": "Goncourt"
+                "label": "Goncourt",
+                "lines": [
+                    "M11"
+                ],
+                "color": "M11"
             },
             "geometry": {
                 "type": "Point",
@@ -3244,36 +3996,45 @@
         {
             "type": "Feature",
             "properties": {
-                "res_com": "M12",
-                "label": "Volontaires"
+                "label": "Volontaires",
+                "lines": [
+                    "M12"
+                ],
+                "color": "M12"
             },
             "geometry": {
                 "type": "Point",
                 "coordinates": [
                     2.307948679336751,
-                    48.841505522367953
+                    48.84150552236795
                 ]
             }
         },
         {
             "type": "Feature",
             "properties": {
-                "res_com": "M12",
-                "label": "Notre-Dame-des-Champs"
+                "label": "Notre-Dame-des-Champs",
+                "lines": [
+                    "M12"
+                ],
+                "color": "M12"
             },
             "geometry": {
                 "type": "Point",
                 "coordinates": [
                     2.328778025504361,
-                    48.844942635216889
+                    48.84494263521689
                 ]
             }
         },
         {
             "type": "Feature",
             "properties": {
-                "res_com": "M12",
-                "label": "Rue du Bac"
+                "label": "Rue du Bac",
+                "lines": [
+                    "M12"
+                ],
+                "color": "M12"
             },
             "geometry": {
                 "type": "Point",
@@ -3286,64 +4047,79 @@
         {
             "type": "Feature",
             "properties": {
-                "res_com": "M12",
-                "label": "Solférino"
+                "label": "Solférino",
+                "lines": [
+                    "M12"
+                ],
+                "color": "M12"
             },
             "geometry": {
                 "type": "Point",
                 "coordinates": [
                     2.323154855841107,
-                    48.858511129873783
+                    48.85851112987378
                 ]
             }
         },
         {
             "type": "Feature",
             "properties": {
-                "res_com": "M13",
-                "label": "Malakoff-Plateau de Vanves"
+                "label": "Malakoff-Plateau de Vanves",
+                "lines": [
+                    "M13"
+                ],
+                "color": "M13"
             },
             "geometry": {
                 "type": "Point",
                 "coordinates": [
                     2.298464194670264,
-                    48.822583708652338
+                    48.82258370865234
                 ]
             }
         },
         {
             "type": "Feature",
             "properties": {
-                "res_com": "M13",
-                "label": "Saint-François-Xavier"
+                "label": "Saint-François-Xavier",
+                "lines": [
+                    "M13"
+                ],
+                "color": "M13"
             },
             "geometry": {
                 "type": "Point",
                 "coordinates": [
                     2.314408121448823,
-                    48.851441709238898
+                    48.8514417092389
                 ]
             }
         },
         {
             "type": "Feature",
             "properties": {
-                "res_com": "M13",
-                "label": "Guy Môquet"
+                "label": "Guy Môquet",
+                "lines": [
+                    "M13"
+                ],
+                "color": "M13"
             },
             "geometry": {
                 "type": "Point",
                 "coordinates": [
                     2.327428458503176,
-                    48.892828853389169
+                    48.89282885338917
                 ]
             }
         },
         {
             "type": "Feature",
             "properties": {
-                "res_com": "M13",
-                "label": "Saint-Denis-Université"
+                "label": "Saint-Denis-Université",
+                "lines": [
+                    "M13"
+                ],
+                "color": "M13"
             },
             "geometry": {
                 "type": "Point",
@@ -3356,22 +4132,28 @@
         {
             "type": "Feature",
             "properties": {
-                "res_com": "M3b",
-                "label": "Pelleport"
+                "label": "Pelleport",
+                "lines": [
+                    "M3b"
+                ],
+                "color": "M3b"
             },
             "geometry": {
                 "type": "Point",
                 "coordinates": [
                     2.401561712742541,
-                    48.868440163275473
+                    48.86844016327547
                 ]
             }
         },
         {
             "type": "Feature",
             "properties": {
-                "res_com": "M7b",
-                "label": "Danube"
+                "label": "Danube",
+                "lines": [
+                    "M7b"
+                ],
+                "color": "M7b"
             },
             "geometry": {
                 "type": "Point",
@@ -3384,64 +4166,81 @@
         {
             "type": "Feature",
             "properties": {
-                "res_com": "M6",
-                "label": "Picpus"
+                "label": "Picpus",
+                "lines": [
+                    "M6"
+                ],
+                "color": "M6"
             },
             "geometry": {
                 "type": "Point",
                 "coordinates": [
                     2.401289019827348,
-                    48.845061579944897
+                    48.8450615799449
                 ]
             }
         },
         {
             "type": "Feature",
             "properties": {
-                "res_com": "M6",
-                "label": "Bel-Air"
+                "label": "Bel-Air",
+                "lines": [
+                    "M6"
+                ],
+                "color": "M6"
             },
             "geometry": {
                 "type": "Point",
                 "coordinates": [
                     2.400918536800477,
-                    48.841338247333518
+                    48.84133824733352
                 ]
             }
         },
         {
             "type": "Feature",
             "properties": {
-                "res_com": "M6 \/ M8 \/ M10",
-                "label": "La Motte Picquet Grenelle"
+                "label": "La Motte Picquet Grenelle",
+                "lines": [
+                    "M6",
+                    "M8",
+                    "M10"
+                ],
+                "color": "connection"
             },
             "geometry": {
                 "type": "Point",
                 "coordinates": [
                     2.297916591840311,
-                    48.849064563474911
+                    48.84906456347491
                 ]
             }
         },
         {
             "type": "Feature",
             "properties": {
-                "res_com": "M6",
-                "label": "Bir-Hakeim"
+                "label": "Bir-Hakeim",
+                "lines": [
+                    "M6"
+                ],
+                "color": "M6"
             },
             "geometry": {
                 "type": "Point",
                 "coordinates": [
                     2.289334532778807,
-                    48.853942606213778
+                    48.85394260621378
                 ]
             }
         },
         {
             "type": "Feature",
             "properties": {
-                "res_com": "M7",
-                "label": "Corentin Cariou"
+                "label": "Corentin Cariou",
+                "lines": [
+                    "M7"
+                ],
+                "color": "M7"
             },
             "geometry": {
                 "type": "Point",
@@ -3454,50 +4253,62 @@
         {
             "type": "Feature",
             "properties": {
-                "res_com": "M7",
-                "label": "Crimée"
+                "label": "Crimée",
+                "lines": [
+                    "M7"
+                ],
+                "color": "M7"
             },
             "geometry": {
                 "type": "Point",
                 "coordinates": [
                     2.377315755595574,
-                    48.890788969528437
+                    48.89078896952844
                 ]
             }
         },
         {
             "type": "Feature",
             "properties": {
-                "res_com": "M7",
-                "label": "Riquet"
+                "label": "Riquet",
+                "lines": [
+                    "M7"
+                ],
+                "color": "M7"
             },
             "geometry": {
                 "type": "Point",
                 "coordinates": [
                     2.374204016083614,
-                    48.888267620588941
+                    48.88826762058894
                 ]
             }
         },
         {
             "type": "Feature",
             "properties": {
-                "res_com": "M7",
-                "label": "Sully-Morland"
+                "label": "Sully-Morland",
+                "lines": [
+                    "M7"
+                ],
+                "color": "M7"
             },
             "geometry": {
                 "type": "Point",
                 "coordinates": [
                     2.361985226391106,
-                    48.851237607092429
+                    48.85123760709243
                 ]
             }
         },
         {
             "type": "Feature",
             "properties": {
-                "res_com": "M7",
-                "label": "Villejuif-Léo Lagrange"
+                "label": "Villejuif-Léo Lagrange",
+                "lines": [
+                    "M7"
+                ],
+                "color": "M7"
             },
             "geometry": {
                 "type": "Point",
@@ -3510,36 +4321,45 @@
         {
             "type": "Feature",
             "properties": {
-                "res_com": "M8",
-                "label": "Boucicaut"
+                "label": "Boucicaut",
+                "lines": [
+                    "M8"
+                ],
+                "color": "M8"
             },
             "geometry": {
                 "type": "Point",
                 "coordinates": [
                     2.287945766499665,
-                    48.841094056349597
+                    48.8410940563496
                 ]
             }
         },
         {
             "type": "Feature",
             "properties": {
-                "res_com": "M8",
-                "label": "Liberté"
+                "label": "Liberté",
+                "lines": [
+                    "M8"
+                ],
+                "color": "M8"
             },
             "geometry": {
                 "type": "Point",
                 "coordinates": [
                     2.406742223173149,
-                    48.826054999232433
+                    48.82605499923243
                 ]
             }
         },
         {
             "type": "Feature",
             "properties": {
-                "res_com": "M8",
-                "label": "École Vétérinaire de Maisons-Alfort"
+                "label": "École Vétérinaire de Maisons-Alfort",
+                "lines": [
+                    "M8"
+                ],
+                "color": "M8"
             },
             "geometry": {
                 "type": "Point",
@@ -3552,8 +4372,11 @@
         {
             "type": "Feature",
             "properties": {
-                "res_com": "M8",
-                "label": "Maisons-Alfort-Stade"
+                "label": "Maisons-Alfort-Stade",
+                "lines": [
+                    "M8"
+                ],
+                "color": "M8"
             },
             "geometry": {
                 "type": "Point",
@@ -3566,64 +4389,79 @@
         {
             "type": "Feature",
             "properties": {
-                "res_com": "M9",
-                "label": "Porte de St-Cloud"
+                "label": "Porte de St-Cloud",
+                "lines": [
+                    "M9"
+                ],
+                "color": "M9"
             },
             "geometry": {
                 "type": "Point",
                 "coordinates": [
                     2.257122229845438,
-                    48.837961213537049
+                    48.83796121353705
                 ]
             }
         },
         {
             "type": "Feature",
             "properties": {
-                "res_com": "M9",
-                "label": "Exelmans"
+                "label": "Exelmans",
+                "lines": [
+                    "M9"
+                ],
+                "color": "M9"
             },
             "geometry": {
                 "type": "Point",
                 "coordinates": [
                     2.260032902212424,
-                    48.842938695862543
+                    48.84293869586254
                 ]
             }
         },
         {
             "type": "Feature",
             "properties": {
-                "res_com": "M9",
-                "label": "Jasmin"
+                "label": "Jasmin",
+                "lines": [
+                    "M9"
+                ],
+                "color": "M9"
             },
             "geometry": {
                 "type": "Point",
                 "coordinates": [
                     2.26817674943596,
-                    48.852504090612889
+                    48.85250409061289
                 ]
             }
         },
         {
             "type": "Feature",
             "properties": {
-                "res_com": "M14",
-                "label": "Olympiades"
+                "label": "Olympiades",
+                "lines": [
+                    "M14"
+                ],
+                "color": "M14"
             },
             "geometry": {
                 "type": "Point",
                 "coordinates": [
                     2.368032647756258,
-                    48.827270836039183
+                    48.82727083603918
                 ]
             }
         },
         {
             "type": "Feature",
             "properties": {
-                "res_com": "M4",
-                "label": "Mairie de Montrouge"
+                "label": "Mairie de Montrouge",
+                "lines": [
+                    "M4"
+                ],
+                "color": "M4"
             },
             "geometry": {
                 "type": "Point",
@@ -3636,106 +4474,131 @@
         {
             "type": "Feature",
             "properties": {
-                "res_com": "M9 \/ T3B",
-                "label": "Porte de Montreuil"
+                "label": "Porte de Montreuil",
+                "lines": [
+                    "M9"
+                ],
+                "color": "M9"
             },
             "geometry": {
                 "type": "Point",
                 "coordinates": [
                     2.41060653669226,
-                    48.853540998658922
+                    48.85354099865892
                 ]
             }
         },
         {
             "type": "Feature",
             "properties": {
-                "res_com": "M1 \/ T3A \/ T3B",
-                "label": "Porte de Vincennes"
+                "label": "Porte de Vincennes",
+                "lines": [
+                    "M1"
+                ],
+                "color": "M1"
             },
             "geometry": {
                 "type": "Point",
                 "coordinates": [
                     2.410140367974107,
-                    48.847158479402097
+                    48.8471584794021
                 ]
             }
         },
         {
             "type": "Feature",
             "properties": {
-                "res_com": "RER C \/ M1",
-                "label": "PORTE MAILLOT"
+                "label": "PORTE MAILLOT",
+                "lines": [
+                    "M1"
+                ],
+                "color": "M1"
             },
             "geometry": {
                 "type": "Point",
                 "coordinates": [
                     2.28379555701364,
-                    48.877349600593611
+                    48.87734960059361
                 ]
             }
         },
         {
             "type": "Feature",
             "properties": {
-                "res_com": "M13 \/ T1",
-                "label": "Asnières Gennevilliers Les Courtilles"
+                "label": "Asnières Gennevilliers Les Courtilles",
+                "lines": [
+                    "M13"
+                ],
+                "color": "M13"
             },
             "geometry": {
                 "type": "Point",
                 "coordinates": [
                     2.284174448283296,
-                    48.930757003336282
+                    48.93075700333628
                 ]
             }
         },
         {
             "type": "Feature",
             "properties": {
-                "res_com": "M5 \/ T1",
-                "label": "Bobigny-P. Picasso"
+                "label": "Bobigny-P. Picasso",
+                "lines": [
+                    "M5"
+                ],
+                "color": "M5"
             },
             "geometry": {
                 "type": "Point",
                 "coordinates": [
                     2.449189904488852,
-                    48.906374770270013
+                    48.90637477027001
                 ]
             }
         },
         {
             "type": "Feature",
             "properties": {
-                "res_com": "M12 \/ T3B",
-                "label": "Porte de la Chapelle"
+                "label": "Porte de la Chapelle",
+                "lines": [
+                    "M12"
+                ],
+                "color": "M12"
             },
             "geometry": {
                 "type": "Point",
                 "coordinates": [
                     2.359393901482993,
-                    48.898392953266409
+                    48.89839295326641
                 ]
             }
         },
         {
             "type": "Feature",
             "properties": {
-                "res_com": "M3 \/ T3B",
-                "label": "Porte de Bagnolet"
+                "label": "Porte de Bagnolet",
+                "lines": [
+                    "M3"
+                ],
+                "color": "M3"
             },
             "geometry": {
                 "type": "Point",
                 "coordinates": [
                     2.408759948420706,
-                    48.864585191092701
+                    48.8645851910927
                 ]
             }
         },
         {
             "type": "Feature",
             "properties": {
-                "res_com": "LIGNE R \/ RER A \/ RER D \/ M1 \/ M14",
-                "label": "GARE DE LYON"
+                "label": "GARE DE LYON",
+                "lines": [
+                    "M1",
+                    "M14"
+                ],
+                "color": "connection"
             },
             "geometry": {
                 "type": "Point",
@@ -3748,22 +4611,28 @@
         {
             "type": "Feature",
             "properties": {
-                "res_com": "M8 \/ T3A",
-                "label": "Porte Dorée"
+                "label": "Porte Dorée",
+                "lines": [
+                    "M8"
+                ],
+                "color": "M8"
             },
             "geometry": {
                 "type": "Point",
                 "coordinates": [
                     2.405349342949603,
-                    48.834764459927761
+                    48.83476445992776
                 ]
             }
         },
         {
             "type": "Feature",
             "properties": {
-                "res_com": "M8 \/ T3A",
-                "label": "Porte de Charenton"
+                "label": "Porte de Charenton",
+                "lines": [
+                    "M8"
+                ],
+                "color": "M8"
             },
             "geometry": {
                 "type": "Point",
@@ -3776,8 +4645,11 @@
         {
             "type": "Feature",
             "properties": {
-                "res_com": "RER C \/ M3",
-                "label": "PEREIRE-LEVALLOIS"
+                "label": "PEREIRE-LEVALLOIS",
+                "lines": [
+                    "M3"
+                ],
+                "color": "M3"
             },
             "geometry": {
                 "type": "Point",
@@ -3790,50 +4662,64 @@
         {
             "type": "Feature",
             "properties": {
-                "res_com": "M13 \/ T8",
-                "label": "St-Denis-Porte de Paris"
+                "label": "St-Denis-Porte de Paris",
+                "lines": [
+                    "M13"
+                ],
+                "color": "M13"
             },
             "geometry": {
                 "type": "Point",
                 "coordinates": [
                     2.356035795526451,
-                    48.929935890585227
+                    48.92993589058523
                 ]
             }
         },
         {
             "type": "Feature",
             "properties": {
-                "res_com": "M7 \/ T3B",
-                "label": "Porte de la Villette"
+                "label": "Porte de la Villette",
+                "lines": [
+                    "M7"
+                ],
+                "color": "M7"
             },
             "geometry": {
                 "type": "Point",
                 "coordinates": [
                     2.385508387668673,
-                    48.897389891581859
+                    48.89738989158186
                 ]
             }
         },
         {
             "type": "Feature",
             "properties": {
-                "res_com": "M5 \/ T3B",
-                "label": "Porte de Pantin"
+                "label": "Porte de Pantin",
+                "lines": [
+                    "M5"
+                ],
+                "color": "M5"
             },
             "geometry": {
                 "type": "Point",
                 "coordinates": [
                     2.3957953281633,
-                    48.889472657743248
+                    48.88947265774325
                 ]
             }
         },
         {
             "type": "Feature",
             "properties": {
-                "res_com": "LIGNE P \/ M4 \/ M5 \/ M7",
-                "label": "GARE DE L'EST"
+                "label": "GARE DE L'EST",
+                "lines": [
+                    "M4",
+                    "M5",
+                    "M7"
+                ],
+                "color": "connection"
             },
             "geometry": {
                 "type": "Point",
@@ -3846,8 +4732,12 @@
         {
             "type": "Feature",
             "properties": {
-                "res_com": "M3b \/ M11 \/ T3B",
-                "label": "Porte des Lilas"
+                "label": "Porte des Lilas",
+                "lines": [
+                    "M3b",
+                    "M11"
+                ],
+                "color": "connection"
             },
             "geometry": {
                 "type": "Point",
@@ -3860,148 +4750,185 @@
         {
             "type": "Feature",
             "properties": {
-                "res_com": "RER C \/ M10",
-                "label": "JAVEL"
+                "label": "JAVEL",
+                "lines": [
+                    "M10"
+                ],
+                "color": "M10"
             },
             "geometry": {
                 "type": "Point",
                 "coordinates": [
                     2.276760967379574,
-                    48.846192140488547
+                    48.84619214048855
                 ]
             }
         },
         {
             "type": "Feature",
             "properties": {
-                "res_com": "M8 \/ T3A",
-                "label": "Balard"
+                "label": "Balard",
+                "lines": [
+                    "M8"
+                ],
+                "color": "M8"
             },
             "geometry": {
                 "type": "Point",
                 "coordinates": [
                     2.278237951915641,
-                    48.836096784057077
+                    48.83609678405708
                 ]
             }
         },
         {
             "type": "Feature",
             "properties": {
-                "res_com": "M13 \/ T3A",
-                "label": "Porte de Vanves"
+                "label": "Porte de Vanves",
+                "lines": [
+                    "M13"
+                ],
+                "color": "M13"
             },
             "geometry": {
                 "type": "Point",
                 "coordinates": [
                     2.305340930810601,
-                    48.827704611721813
+                    48.82770461172181
                 ]
             }
         },
         {
             "type": "Feature",
             "properties": {
-                "res_com": "M4 \/ T3A",
-                "label": "Porte d'Orléans"
+                "label": "Porte d'Orléans",
+                "lines": [
+                    "M4"
+                ],
+                "color": "M4"
             },
             "geometry": {
                 "type": "Point",
                 "coordinates": [
                     2.325509578400368,
-                    48.823151633421659
+                    48.82315163342166
                 ]
             }
         },
         {
             "type": "Feature",
             "properties": {
-                "res_com": "RER C \/ M14",
-                "label": "BIBLIOTHÈQUE FRANCOIS MITTERRAND"
+                "label": "BIBLIOTHÈQUE FRANCOIS MITTERRAND",
+                "lines": [
+                    "M14"
+                ],
+                "color": "M14"
             },
             "geometry": {
                 "type": "Point",
                 "coordinates": [
                     2.376310721393016,
-                    48.830258457266531
+                    48.83025845726653
                 ]
             }
         },
         {
             "type": "Feature",
             "properties": {
-                "res_com": "LIGNE L \/ LIGNE U \/ RER A \/ M1 \/ T2",
-                "label": "LA DEFENSE GRANDE ARCHE"
+                "label": "LA DEFENSE GRANDE ARCHE",
+                "lines": [
+                    "M1"
+                ],
+                "color": "M1"
             },
             "geometry": {
                 "type": "Point",
                 "coordinates": [
                     2.237018056395014,
-                    48.892187076449503
+                    48.8921870764495
                 ]
             }
         },
         {
             "type": "Feature",
             "properties": {
-                "res_com": "M13",
-                "label": "Les Agnettes"
+                "label": "Les Agnettes",
+                "lines": [
+                    "M13"
+                ],
+                "color": "M13"
             },
             "geometry": {
                 "type": "Point",
                 "coordinates": [
                     2.286279577529783,
-                    48.923103779666022
+                    48.92310377966602
                 ]
             }
         },
         {
             "type": "Feature",
             "properties": {
-                "res_com": "M12",
-                "label": "Front Populaire"
+                "label": "Front Populaire",
+                "lines": [
+                    "M12"
+                ],
+                "color": "M12"
             },
             "geometry": {
                 "type": "Point",
                 "coordinates": [
                     2.365920319668821,
-                    48.906567146369923
+                    48.90656714636992
                 ]
             }
         },
         {
             "type": "Feature",
             "properties": {
-                "res_com": "LIGNE H \/ LIGNE K \/ RER B \/ RER D \/ M4 \/ M5",
-                "label": "GARE DU NORD"
+                "label": "GARE DU NORD",
+                "lines": [
+                    "M4",
+                    "M5"
+                ],
+                "color": "connection"
             },
             "geometry": {
                 "type": "Point",
                 "coordinates": [
                     2.356328543659048,
-                    48.880922007570767
+                    48.88092200757077
                 ]
             }
         },
         {
             "type": "Feature",
             "properties": {
-                "res_com": "LIGNE J \/ LIGNE L \/ RER E \/ M3 \/ M12 \/ M13 \/ M14",
-                "label": "ST-LAZARE"
+                "label": "ST-LAZARE",
+                "lines": [
+                    "M3",
+                    "M12",
+                    "M13",
+                    "M14"
+                ],
+                "color": "connection"
             },
             "geometry": {
                 "type": "Point",
                 "coordinates": [
                     2.325727961509136,
-                    48.875933152641181
+                    48.87593315264118
                 ]
             }
         },
         {
             "type": "Feature",
             "properties": {
-                "res_com": "RER B \/ RER C \/ M4",
-                "label": "SAINT-MICHEL"
+                "label": "SAINT-MICHEL",
+                "lines": [
+                    "M4"
+                ],
+                "color": "M4"
             },
             "geometry": {
                 "type": "Point",
@@ -4014,8 +4941,11 @@
         {
             "type": "Feature",
             "properties": {
-                "res_com": "M7 \/ T3A",
-                "label": "Porte de Choisy"
+                "label": "Porte de Choisy",
+                "lines": [
+                    "M7"
+                ],
+                "color": "M7"
             },
             "geometry": {
                 "type": "Point",
@@ -4028,36 +4958,45 @@
         {
             "type": "Feature",
             "properties": {
-                "res_com": "M7 \/ T3A",
-                "label": "Porte d'Ivry"
+                "label": "Porte d'Ivry",
+                "lines": [
+                    "M7"
+                ],
+                "color": "M7"
             },
             "geometry": {
                 "type": "Point",
                 "coordinates": [
                     2.369290587346029,
-                    48.821355783814077
+                    48.82135578381408
                 ]
             }
         },
         {
             "type": "Feature",
             "properties": {
-                "res_com": "M7 \/ T7",
-                "label": "Villejuif-Louis Aragon"
+                "label": "Villejuif-Louis Aragon",
+                "lines": [
+                    "M7"
+                ],
+                "color": "M7"
             },
             "geometry": {
                 "type": "Point",
                 "coordinates": [
                     2.367804106975457,
-                    48.787562792053492
+                    48.78756279205349
                 ]
             }
         },
         {
             "type": "Feature",
             "properties": {
-                "res_com": "M8",
-                "label": "Créteil-Pointe du Lac"
+                "label": "Créteil-Pointe du Lac",
+                "lines": [
+                    "M8"
+                ],
+                "color": "M8"
             },
             "geometry": {
                 "type": "Point",
@@ -4070,8 +5009,11 @@
         {
             "type": "Feature",
             "properties": {
-                "res_com": "M7 \/ T1",
-                "label": "La Courneuve 8 mai 1945"
+                "label": "La Courneuve 8 mai 1945",
+                "lines": [
+                    "M7"
+                ],
+                "color": "M7"
             },
             "geometry": {
                 "type": "Point",
@@ -4084,36 +5026,49 @@
         {
             "type": "Feature",
             "properties": {
-                "res_com": "M13 \/ T1",
-                "label": "Basilique de St-Denis"
+                "label": "Basilique de St-Denis",
+                "lines": [
+                    "M13"
+                ],
+                "color": "M13"
             },
             "geometry": {
                 "type": "Point",
                 "coordinates": [
                     2.360072141841641,
-                    48.937304735745421
+                    48.93730473574542
                 ]
             }
         },
         {
             "type": "Feature",
             "properties": {
-                "res_com": "RER A \/ M1 \/ M2 \/ M6 \/ M9",
-                "label": "NATION"
+                "label": "NATION",
+                "lines": [
+                    "M1",
+                    "M2",
+                    "M6",
+                    "M9"
+                ],
+                "color": "connection"
             },
             "geometry": {
                 "type": "Point",
                 "coordinates": [
                     2.395823588826127,
-                    48.848237110410189
+                    48.84823711041019
                 ]
             }
         },
         {
             "type": "Feature",
             "properties": {
-                "res_com": "RER C \/ M5 \/ M10",
-                "label": "GARE D'AUSTERLITZ"
+                "label": "GARE D'AUSTERLITZ",
+                "lines": [
+                    "M5",
+                    "M10"
+                ],
+                "color": "connection"
             },
             "geometry": {
                 "type": "Point",
@@ -4126,64 +5081,84 @@
         {
             "type": "Feature",
             "properties": {
-                "res_com": "LIGNE N \/ M4 \/ M6 \/ M12 \/ M13",
-                "label": "MONTPARNASSE"
+                "label": "MONTPARNASSE",
+                "lines": [
+                    "M4",
+                    "M6",
+                    "M12",
+                    "M13"
+                ],
+                "color": "connection"
             },
             "geometry": {
                 "type": "Point",
                 "coordinates": [
                     2.32050922752816,
-                    48.841186921143183
+                    48.84118692114318
                 ]
             }
         },
         {
             "type": "Feature",
             "properties": {
-                "res_com": "RER B \/ M4 \/ M6",
-                "label": "DENFERT-ROCHEREAU"
+                "label": "DENFERT-ROCHEREAU",
+                "lines": [
+                    "M4",
+                    "M6"
+                ],
+                "color": "connection"
             },
             "geometry": {
                 "type": "Point",
                 "coordinates": [
                     2.332852309960891,
-                    48.834292980473201
+                    48.8342929804732
                 ]
             }
         },
         {
             "type": "Feature",
             "properties": {
-                "res_com": "RER C \/ M8 \/ M13",
-                "label": "INVALIDES"
+                "label": "INVALIDES",
+                "lines": [
+                    "M8",
+                    "M13"
+                ],
+                "color": "connection"
             },
             "geometry": {
                 "type": "Point",
                 "coordinates": [
                     2.313908906380806,
-                    48.862901844234841
+                    48.86290184423484
                 ]
             }
         },
         {
             "type": "Feature",
             "properties": {
-                "res_com": "M12 \/ T3A",
-                "label": "Porte de Versailles"
+                "label": "Porte de Versailles",
+                "lines": [
+                    "M12"
+                ],
+                "color": "M12"
             },
             "geometry": {
                 "type": "Point",
                 "coordinates": [
                     2.288252677414912,
-                    48.832601192435583
+                    48.83260119243558
                 ]
             }
         },
         {
             "type": "Feature",
             "properties": {
-                "res_com": "M7 \/ T3A",
-                "label": "Porte d'Italie"
+                "label": "Porte d'Italie",
+                "lines": [
+                    "M7"
+                ],
+                "color": "M7"
             },
             "geometry": {
                 "type": "Point",
@@ -4196,8 +5171,11 @@
         {
             "type": "Feature",
             "properties": {
-                "res_com": "M13 \/ T6",
-                "label": "Châtillon-Montrouge"
+                "label": "Châtillon-Montrouge",
+                "lines": [
+                    "M13"
+                ],
+                "color": "M13"
             },
             "geometry": {
                 "type": "Point",
@@ -4210,8 +5188,11 @@
         {
             "type": "Feature",
             "properties": {
-                "res_com": "RER A \/ M1",
-                "label": "CHARLES DE GAULLE ÉTOILE"
+                "label": "CHARLES DE GAULLE ÉTOILE",
+                "lines": [
+                    "M1"
+                ],
+                "color": "M1"
             },
             "geometry": {
                 "type": "Point",
