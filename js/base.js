@@ -1,7 +1,11 @@
 var markers = [];
+var stations_metro_url = 'metro.geojson';
+var map = null;
+
 function rad(x) {
     return x * Math.PI / 180;
 }
+
 function find_closest_marker(event) {
     console.log('event', event);
     var lat = event.lngLat.lat;
@@ -29,62 +33,67 @@ function find_closest_marker(event) {
     alert(markers[closest].label);
 }
 
+var storeMarkers = function (element) {
+    markers.push(
+        {
+            lat: element.geometry.coordinates[1],
+            lng: element.geometry.coordinates[0],
+            label: element.properties.label
+        }
+    );
+};
 
+var addMarkers = function (data) {
+    // gather all useful data for markers
+    data.features.forEach(storeMarkers);
+
+    map.addSource("markers", {
+        "type": "geojson",
+        "data": data
+    });
+
+    // todo: station must be html icon (to be hidden or visible with css)
+    map.addLayer({
+        "id": "markers",
+        "type": "symbol",
+        "source": "markers",
+        "paint": {
+            "text-color": "#ffffff"
+        },
+        "layout": {
+            "text-field": "{label}", // show station name
+            "text-font": ["Open Sans Semibold", "Arial Unicode MS Bold"],
+            "text-offset": [0, 0.6],
+            "text-anchor": "top"
+        }
+    });
+
+    // export for debug
+    window._map = map;
+};
+
+var loadMetroStations = function () {
+    // load json<
+    $.ajax({
+        url: stations_metro_url,
+        dataType: "json"
+    }).done(addMarkers);
+
+    map.on('click', find_closest_marker);
+};
+
+
+// on page load
 $(window).on('load', function () {
 
     mapboxgl.accessToken = 'pk.eyJ1Ijoia2F6ZXMiLCJhIjoiMjBiMDc0M2UzYTdkY2NjZDZjZDVhZDdjYWMxMWU4NGMifQ.UbQyYB-QiEQklqy7AXI4XA';
-    var map = new mapboxgl.Map({
+
+    map = new mapboxgl.Map({
         container: 'map',
         style: 'mapbox://styles/kazes/cippyzs87004qdmm8k67m0nuu',
         center: [2.3797151089356134, 48.88486112278673],
         zoom: 15
     });
 
-
-    map.style.on('load', function () {
-        // load json
-        $.ajax({
-            url: 'metro.geojson',
-            dataType: "json"
-        }).done(function (data) {
-            console.log('data', data);
-
-            data.features.forEach(function (element, index, array) {
-                markers.push(
-                    {
-                        lat: element.geometry.coordinates[1],
-                        lng: element.geometry.coordinates[0],
-                        label: element.properties.label
-                    }
-                );
-            });
-
-
-            console.log('markers', markers);
-            map.addSource("markers", {
-                "type": "geojson",
-                "data": data
-            });
-
-            map.addLayer({
-                "id": "markers",
-                "type": "symbol",
-                "source": "markers",
-                "paint": {
-                    "text-color": "#ffffff"
-                },
-                "layout": {
-                    "text-field": "{label}", // show station name
-                    "text-font": ["Open Sans Semibold", "Arial Unicode MS Bold"],
-                    "text-offset": [0, 0.6],
-                    "text-anchor": "top"
-                }
-            });
-
-
-            window._map = map;
-        });
-
-        map.on('click', find_closest_marker);
-    });
+    map.style.on('load', loadMetroStations);
 });
