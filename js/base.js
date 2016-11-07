@@ -180,7 +180,11 @@ var addAllLines = function (lines) {
                 "type": "line",
                 "source": "lines",
                 "paint": {
-                    "line-color": line_color[name]
+                    "line-color": line_color[name],
+                    "line-width":{
+                        'base': 1.75,
+                        'stops': [[5, 2], [13, 7], [22, 180]]
+                    }
                 },
                 "filter": ["==", "name", name]
             });
