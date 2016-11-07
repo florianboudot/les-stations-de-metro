@@ -5190,9 +5190,11 @@
             "properties": {
                 "label": "CHARLES DE GAULLE ÉTOILE",
                 "lines": [
-                    "M1"
+                    "M1",
+                    "M2",
+                    "M6"
                 ],
-                "color": "M1"
+                "color": "connection"
             },
             "geometry": {
                 "type": "Point",

@@ -1,11 +1,41 @@
-var markers = [];
-var stations_metro_url = 'metro.geojson';
-var map = null;
+/*
 
+* "Les stations de métro" : mini game to find and locate metro stations of Paris
+* author : florian.boudot@gmail.com
+* Date : november 2016
+*
+* */
+
+
+// data urls
+var stations_metro_url = 'metro_stations.geojson';
+var lines_url = 'metro_lines.geojson';
+
+// the map
+var map = null;
+var mapbox_token = 'pk.eyJ1Ijoia2F6ZXMiLCJhIjoiMjBiMDc0M2UzYTdkY2NjZDZjZDVhZDdjYWMxMWU4NGMifQ.UbQyYB-QiEQklqy7AXI4XA';
+var map_style_url = 'mapbox://styles/kazes/cippyzs87004qdmm8k67m0nuu';
+var map_center = [2.3626665182515296, 48.8620380668425];
+var map_zoom = 12;
+var map_id = 'map';
+
+// vars
+var markers = [];
+
+
+/**
+ *
+ * @param x
+ * @returns {number}
+ */
 function rad(x) {
     return x * Math.PI / 180;
 }
 
+/**
+ * Find the closest marker
+ * @param event
+ */
 function find_closest_marker(event) {
     console.log('event', event);
     var lat = event.lngLat.lat;
@@ -33,6 +63,11 @@ function find_closest_marker(event) {
     alert(markers[closest].label);
 }
 
+
+/**
+ * store cleaned metro stations data
+ * @param element
+ */
 var storeMarkers = function (element) {
     markers.push(
         {
@@ -43,16 +78,22 @@ var storeMarkers = function (element) {
     );
 };
 
-var addMarkers = function (data) {
+
+/**
+ * place metro stations on the map
+ * @param data
+ */
+var addAllStations = function (data) {
     // gather all useful data for markers
     data.features.forEach(storeMarkers);
 
+    // all stations
     map.addSource("markers", {
         "type": "geojson",
         "data": data
     });
 
-    // todo: station must be html icon (to be hidden or visible with css)
+    // all stations
     map.addLayer({
         "id": "markers",
         "type": "circle",
@@ -100,12 +141,66 @@ var addMarkers = function (data) {
     window._map = map;
 };
 
+var filterGroup = document.getElementById('filter-group');
+var addAllLines = function (lines) {
+    map.addSource("lines", {
+        "type": "geojson",
+        "data": lines
+    });
+
+
+    console.log('lines',lines);
+
+    // https://www.mapbox.com/mapbox-gl-js/example/filter-markers/
+    lines.features.forEach(function(feature) {
+        var name = feature.properties['name'];
+        var layerID = 'line-' + name;
+        console.log('layerID',layerID);
+        // Add a layer for this symbol type if it hasn't been added already.
+        if (!map.getLayer(layerID)) {
+            map.addLayer({
+                "id": layerID,
+                "type": "line",
+                "source": "lines",
+                "paint": {
+                    "line-color": "#ffffff"
+                },
+                "filter": ["==", "name", name]
+            });
+
+            // Add checkbox and label elements for the layer.
+            var input = document.createElement('input');
+            input.type = 'checkbox';
+            input.id = layerID;
+            input.checked = true;
+            filterGroup.appendChild(input);
+
+            var label = document.createElement('label');
+            label.setAttribute('for', layerID);
+            label.textContent = name;
+            filterGroup.appendChild(label);
+
+            // When the checkbox changes, update the visibility of the layer.
+            input.addEventListener('change', function(e) {
+                map.setLayoutProperty(layerID, 'visibility',
+                    e.target.checked ? 'visible' : 'none');
+            });
+        }
+    });
+
+};
+
 var loadMetroStations = function () {
-    // load json<
+    // load metro stations
     $.ajax({
         url: stations_metro_url,
         dataType: "json"
-    }).done(addMarkers);
+    }).done(addAllStations);
+
+    $.ajax({
+        url: lines_url,
+        dataType: "json"
+    }).done(addAllLines);
 
     map.on('click', find_closest_marker);
 };
@@ -113,14 +208,12 @@ var loadMetroStations = function () {
 
 // on page load
 $(window).on('load', function () {
-
-    mapboxgl.accessToken = 'pk.eyJ1Ijoia2F6ZXMiLCJhIjoiMjBiMDc0M2UzYTdkY2NjZDZjZDVhZDdjYWMxMWU4NGMifQ.UbQyYB-QiEQklqy7AXI4XA';
-
+    mapboxgl.accessToken = mapbox_token;
     map = new mapboxgl.Map({
-        container: 'map',
-        style: 'mapbox://styles/kazes/cippyzs87004qdmm8k67m0nuu',
-        center: [2.3797151089356134, 48.88486112278673],
-        zoom: 15
+        container: map_id,
+        style: map_style_url,
+        center: map_center,
+        zoom: map_zoom
     });
 
     map.style.on('load', loadMetroStations);
