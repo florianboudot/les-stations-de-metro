@@ -1,10 +1,10 @@
 /*
 
-* "Les stations de métro" : mini game to find and locate metro stations of Paris
-* author : florian.boudot@gmail.com
-* Date : november 2016
-*
-* */
+ * "Les stations de métro" : mini game to find and locate metro stations of Paris
+ * author : florian.boudot@gmail.com
+ * Date : november 2016
+ *
+ * */
 
 
 // data urls
@@ -21,7 +21,24 @@ var map_id = 'map';
 
 // vars
 var markers = [];
-
+var line_color = {
+    "M1": '#FFCD00',
+    "M2": '#003CA6',
+    "M3": '#837902',
+    "M3b": '#6EC4E8',
+    "M4": '#CF009E',
+    "M5": '#FF7E2E',
+    "M6": '#6ECA97',
+    "M7": '#FA9ABA',
+    "M7b": '#6ECA97',
+    "M8": '#E19BDF',
+    "M9": '#B6BD00',
+    "M10": '#C9910D',
+    "M11": '#704B1C',
+    "M12": '#007852',
+    "M13": '#6EC4E8',
+    "M14": '#62259D'
+};
 
 /**
  *
@@ -110,22 +127,22 @@ var addAllStations = function (data) {
                 type: 'categorical',
                 stops: [
                     ["connection", '#FFFFFF'],
-                    ["M1", '#FFCD00'],
-                    ["M2", '#003CA6'],
-                    ["M3", '#837902'],
-                    ["M3b", '#6EC4E8'],
-                    ["M4", '#CF009E'],
-                    ["M5", '#FF7E2E'],
-                    ["M6", '#6ECA97'],
-                    ["M7", '#FA9ABA'],
-                    ["M7b", '#6ECA97'],
-                    ["M8", '#E19BDF'],
-                    ["M9", '#B6BD00'],
-                    ["M10", '#C9910D'],
-                    ["M11", '#704B1C'],
-                    ["M12", '#007852'],
-                    ["M13", '#6EC4E8'],
-                    ["M14", '#62259D']
+                    ["M1", line_color["M1"]],
+                    ["M2", line_color["M2"]],
+                    ["M3", line_color["M3"]],
+                    ["M3b", line_color["M3b"]],
+                    ["M4", line_color["M4"]],
+                    ["M5", line_color["M5"]],
+                    ["M6", line_color["M6"]],
+                    ["M7", line_color["M7"]],
+                    ["M7b", line_color["M7b"]],
+                    ["M8", line_color["M8"]],
+                    ["M9", line_color["M9"]],
+                    ["M10", line_color["M10"]],
+                    ["M11", line_color["M11"]],
+                    ["M12", line_color["M12"]],
+                    ["M13", line_color["M13"]],
+                    ["M14", line_color["M14"]]
                 ]
             }
         },
@@ -149,13 +166,13 @@ var addAllLines = function (lines) {
     });
 
 
-    console.log('lines',lines);
+    console.log('lines', lines);
 
     // https://www.mapbox.com/mapbox-gl-js/example/filter-markers/
-    lines.features.forEach(function(feature) {
+    lines.features.forEach(function (feature) {
         var name = feature.properties['name'];
         var layerID = 'line-' + name;
-        console.log('layerID',layerID);
+        console.log('layerID', layerID);
         // Add a layer for this symbol type if it hasn't been added already.
         if (!map.getLayer(layerID)) {
             map.addLayer({
@@ -163,7 +180,7 @@ var addAllLines = function (lines) {
                 "type": "line",
                 "source": "lines",
                 "paint": {
-                    "line-color": "#ffffff"
+                    "line-color": line_color[name]
                 },
                 "filter": ["==", "name", name]
             });
@@ -181,7 +198,7 @@ var addAllLines = function (lines) {
             filterGroup.appendChild(label);
 
             // When the checkbox changes, update the visibility of the layer.
-            input.addEventListener('change', function(e) {
+            input.addEventListener('change', function (e) {
                 map.setLayoutProperty(layerID, 'visibility',
                     e.target.checked ? 'visible' : 'none');
             });
