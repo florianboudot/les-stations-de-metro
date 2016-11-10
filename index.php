@@ -20,12 +20,22 @@
             bottom: 0;
             width: 100%;
         }
-    </style>
 
+        .station-form {
+            background: white;
+            padding: 10px;
+            position: absolute;
+            left: 30px;
+            top: 30px;
+            display: none;
+        }
+        .station-form.active {
+            display: block;
+        }
+        .station-form label {
+            display: block;
+        }
 
-
-
-    <style>
         .filter-group {
             font: 12px/20px 'Helvetica Neue', Arial, Helvetica, sans-serif;
             font-weight: 600;
@@ -80,6 +90,10 @@
 <!-- MAP -->
 <div id='map'></div>
 
+<form class="station-form">
+    <label for="station-name">Entrez le nom de cette station</label>
+    <input type="search" id="station-name"/>
+</form>
 
 <nav id='filter-group' class='filter-group'></nav>
 

@@ -8,8 +8,8 @@
 
 
 // data urls
-var stations_metro_url = 'metro_stations.geojson';
-var lines_url = 'metro_lines.geojson';
+var stations_metro_url = 'stations.geojson';
+var lines_url = 'lines.geojson';
 
 // the map
 var map = null;
@@ -20,7 +20,10 @@ var map_zoom = 12;
 var map_id = 'map';
 
 // vars
-var markers = [];
+
+var $form = $('.station-form');
+var stations = [];
+var station_to_match = '';
 var line_color = {
     "M1": '#FFCD00',
     "M2": '#003CA6',
@@ -51,20 +54,19 @@ function rad(x) {
 
 /**
  * Find the closest marker
- * @param event
+ * @param click_event
  */
-function find_closest_marker(event) {
-    console.log('event', event);
-    var lat = event.lngLat.lat;
-    var lng = event.lngLat.lng;
+function find_closest_marker(click_event) {
+    var lat = click_event.lngLat.lat;
+    var lng = click_event.lngLat.lng;
     var R = 6371; // radius of earth in km
     var distances = [];
     var closest = -1;
 
-    // loop through all markers
-    for (i = 0; i < markers.length; i++) {
-        var mlat = markers[i].lat;
-        var mlng = markers[i].lng;
+    // loop through all stations
+    for (i = 0; i < stations.length; i++) {
+        var mlat = stations[i].lat;
+        var mlng = stations[i].lng;
         var dLat = rad(mlat - lat);
         var dLong = rad(mlng - lng);
         var a = Math.sin(dLat / 2) * Math.sin(dLat / 2) +
@@ -77,7 +79,8 @@ function find_closest_marker(event) {
         }
     }
 
-    alert(markers[closest].label);
+    return closest;
+
 }
 
 
@@ -86,11 +89,11 @@ function find_closest_marker(event) {
  * @param element
  */
 var storeMarkers = function (element) {
-    markers.push(
+    stations.push(
         {
+            label: element.properties.label,
             lat: element.geometry.coordinates[1],
-            lng: element.geometry.coordinates[0],
-            label: element.properties.label
+            lng: element.geometry.coordinates[0]
         }
     );
 };
@@ -100,21 +103,21 @@ var storeMarkers = function (element) {
  * place metro stations on the map
  * @param data
  */
-var addAllStations = function (data) {
-    // gather all useful data for markers
+var addStations = function (data) {
+    // gather all useful data for stations
     data.features.forEach(storeMarkers);
 
     // all stations
-    map.addSource("markers", {
+    map.addSource("stations", {
         "type": "geojson",
         "data": data
     });
 
     // all stations
     map.addLayer({
-        "id": "markers",
+        "id": "stations",
         "type": "circle",
-        "source": "markers",
+        "source": "stations",
         "paint": {
             //"text-color": "#ffffff"
             // make circles larger as the user zooms from z12 to z22
@@ -159,14 +162,11 @@ var addAllStations = function (data) {
 };
 
 var filterGroup = document.getElementById('filter-group');
-var addAllLines = function (lines) {
+var addLines = function (lines) {
     map.addSource("lines", {
         "type": "geojson",
         "data": lines
     });
-
-
-    console.log('lines', lines);
 
     // https://www.mapbox.com/mapbox-gl-js/example/filter-markers/
     lines.features.forEach(function (feature) {
@@ -216,14 +216,25 @@ var loadMetroStations = function () {
     $.ajax({
         url: stations_metro_url,
         dataType: "json"
-    }).done(addAllStations);
+    }).done(addStations);
 
-    $.ajax({
+    // load lines
+    /*$.ajax({
         url: lines_url,
         dataType: "json"
-    }).done(addAllLines);
+    }).done(addLines);
+   */
+    map.on('click', function (e) {
+        var closest = find_closest_marker(e);
+        var label = stations[closest].label;
 
-    map.on('click', find_closest_marker);
+        console.log('to match',label);
+
+        station_to_match = label;
+
+        $form.addClass('active');
+
+    });
 };
 
 
@@ -238,4 +249,12 @@ $(window).on('load', function () {
     });
 
     map.style.on('load', loadMetroStations);
+
+    $form.on('submit', function (e) {
+        e.preventDefault(); // do not submit
+
+
+        var input_val = $(this).find('input').val();
+        console.log('input', input_val, input_val.toLowerCase() === station_to_match.toLowerCase());
+    })
 });
