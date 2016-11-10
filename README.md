@@ -1,5 +1,5 @@
 # Les stations de métro
-Jeu gratuit et en ligne où il faut découvrir les stations du métro Parisien sur une carte.
+Jeu gratuit où il faut découvrir toutes les stations du métro Parisien sur une carte.
 
 # Règles
 * Découvrez sur la carte les stations de métro de Paris. Pas celles du RER, ni du bus, ni du tramway.
