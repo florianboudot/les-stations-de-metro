@@ -11,6 +11,8 @@ Jeu gratuit et en ligne où il faut découvrir les stations du métro Parisien s
 # Sources
 * Indices et couleurs de lignes du réseau ferré RATP
  http://data.ratp.fr/explore/dataset/indices-et-couleurs-de-lignes-du-reseau-ferre-ratp/
-* Positions géographiques des stations du réseau RATP ?
+* Gares et stations du réseau ferré d'Île-de-France (donnée généralisée)
+ https://opendata.stif.info/explore/dataset/emplacement-des-gares-idf-data-generalisee/map/?location=15,48.87293,2.365&basemap=jawg.streets
 * Tracé des lignes de métro : http://wiki.openstreetmap.org/wiki/M%C3%A9tro_de_Paris 
- 
+* (Tracés du réseau de transport ferré d'Ile-de-France
+ https://opendata.stif.info/explore/dataset/traces-du-reseau-ferre-idf/export/?location=16,48.86711,2.35971&basemap=jawg.streets)
