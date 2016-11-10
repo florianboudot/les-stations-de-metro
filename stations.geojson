@@ -4508,7 +4508,7 @@
         {
             "type": "Feature",
             "properties": {
-                "label": "PORTE MAILLOT",
+                "label": "Porte Maillot",
                 "lines": [
                     "M1"
                 ],
@@ -4593,7 +4593,7 @@
         {
             "type": "Feature",
             "properties": {
-                "label": "GARE DE LYON",
+                "label": "Gare de Lyon",
                 "lines": [
                     "M1",
                     "M14"
@@ -4645,7 +4645,7 @@
         {
             "type": "Feature",
             "properties": {
-                "label": "PEREIRE-LEVALLOIS",
+                "label": "Pereire-Levallois",
                 "lines": [
                     "M3"
                 ],
@@ -4713,7 +4713,7 @@
         {
             "type": "Feature",
             "properties": {
-                "label": "GARE DE L'EST",
+                "label": "Gare de l'Est",
                 "lines": [
                     "M4",
                     "M5",
@@ -4818,7 +4818,7 @@
         {
             "type": "Feature",
             "properties": {
-                "label": "BIBLIOTHÈQUE FRANCOIS MITTERRAND",
+                "label": "Bibliothèque François Mitterrand",
                 "lines": [
                     "M14"
                 ],
@@ -4835,7 +4835,7 @@
         {
             "type": "Feature",
             "properties": {
-                "label": "LA DEFENSE GRANDE ARCHE",
+                "label": "La Défense Grande Arche",
                 "lines": [
                     "M1"
                 ],
@@ -4886,7 +4886,7 @@
         {
             "type": "Feature",
             "properties": {
-                "label": "GARE DU NORD",
+                "label": "Gare du Nord",
                 "lines": [
                     "M4",
                     "M5"
@@ -4904,7 +4904,7 @@
         {
             "type": "Feature",
             "properties": {
-                "label": "ST-LAZARE",
+                "label": "St-Lazare",
                 "lines": [
                     "M3",
                     "M12",
@@ -4924,7 +4924,7 @@
         {
             "type": "Feature",
             "properties": {
-                "label": "SAINT-MICHEL",
+                "label": "Saint-Michel",
                 "lines": [
                     "M4"
                 ],
@@ -5043,7 +5043,7 @@
         {
             "type": "Feature",
             "properties": {
-                "label": "NATION",
+                "label": "Nation",
                 "lines": [
                     "M1",
                     "M2",
@@ -5063,7 +5063,7 @@
         {
             "type": "Feature",
             "properties": {
-                "label": "GARE D'AUSTERLITZ",
+                "label": "Gare d'Austerlitz",
                 "lines": [
                     "M5",
                     "M10"
@@ -5081,7 +5081,7 @@
         {
             "type": "Feature",
             "properties": {
-                "label": "MONTPARNASSE",
+                "label": "Montparnasse",
                 "lines": [
                     "M4",
                     "M6",
@@ -5101,7 +5101,7 @@
         {
             "type": "Feature",
             "properties": {
-                "label": "DENFERT-ROCHEREAU",
+                "label": "Denfert-Rochereau",
                 "lines": [
                     "M4",
                     "M6"
@@ -5119,7 +5119,7 @@
         {
             "type": "Feature",
             "properties": {
-                "label": "INVALIDES",
+                "label": "Invalides",
                 "lines": [
                     "M8",
                     "M13"
@@ -5188,7 +5188,7 @@
         {
             "type": "Feature",
             "properties": {
-                "label": "CHARLES DE GAULLE ÉTOILE",
+                "label": "Charles de Gaulle Étoile",
                 "lines": [
                     "M1",
                     "M2",
