@@ -10,10 +10,16 @@
 
     <style>
         body {
+            font-family: Arial;
             margin: 0;
             padding: 0;
+            color: white;
+            font-size: 12px;
         }
 
+        a {
+            color: white;
+        }
         #map {
             position: absolute;
             top: 0;
@@ -23,7 +29,8 @@
 
         .station-form {
             background: white;
-            padding: 10px;
+            color: #000;
+            padding: 20px;
             position: absolute;
             left: 30px;
             top: 30px;
@@ -34,6 +41,11 @@
         }
         .station-form label {
             display: block;
+            padding-bottom: 10px;
+            text-align: center;
+        }
+        .station-form input {
+            text-align: center;
         }
 
         .filter-group {
@@ -83,6 +95,12 @@
             content: '✔';
             margin-right: 5px;
         }
+
+        .github {
+            position: absolute;
+            right: 30px;
+            bottom: 30px;
+        }
     </style>
 </head>
 <body>
@@ -96,6 +114,10 @@
 </form>
 
 <nav id='filter-group' class='filter-group'></nav>
+
+<p class="github">
+    voir source sur <a href="https://github.com/kazes/les-stations-de-metro">https://github.com/kazes/les-stations-de-metro</a>
+</p>
 
 <!-- JQUERY -->
 <script src="js/jquery-2.2.4.min.js"></script>

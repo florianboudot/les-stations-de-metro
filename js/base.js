@@ -255,6 +255,10 @@ $(window).on('load', function () {
 
 
         var input_val = $(this).find('input').val();
-        console.log('input', input_val, input_val.toLowerCase() === station_to_match.toLowerCase());
+        var is_name_match = input_val.toLowerCase() === station_to_match.toLowerCase();
+
+        console.log('input', input_val, is_name_match);
+
+        is_name_match && $(this).removeClass('active');
     })
 });
