@@ -20,6 +20,7 @@
         a {
             color: white;
         }
+
         #map {
             position: absolute;
             top: 0;
@@ -30,22 +31,32 @@
         .station-form {
             background: white;
             color: #000;
-            padding: 20px;
+            padding: 30px 20px 20px 20px;
             position: absolute;
             left: 30px;
             top: 30px;
             display: none;
         }
+
         .station-form.active {
             display: block;
         }
+
         .station-form label {
             display: block;
             padding-bottom: 10px;
-            text-align: center;
         }
+
         .station-form input {
             text-align: center;
+        }
+
+        .station-form .close {
+            position: absolute;
+            right: 10px;
+            top: 10px;
+            cursor: pointer;
+            font-size: 20px;
         }
 
         .filter-group {
@@ -109,6 +120,7 @@
 <div id='map'></div>
 
 <form class="station-form">
+    <div class="close js-close-popin">×</div>
     <label for="station-name">Entrez le nom de cette station</label>
     <input type="search" id="station-name"/>
 </form>

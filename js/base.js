@@ -21,7 +21,7 @@ var map_id = 'map';
 
 // vars
 
-var $form = $('.station-form');
+var $popin = $('.station-form');
 var stations = [];
 var station_to_match = '';
 var line_color = {
@@ -232,11 +232,15 @@ var loadMetroStations = function () {
 
         station_to_match = label;
 
-        $form.addClass('active');
+        $popin.addClass('active');
 
     });
 };
 
+
+var closePopin = function () {
+    $popin.removeClass('active');
+};
 
 // on page load
 $(window).on('load', function () {
@@ -250,7 +254,9 @@ $(window).on('load', function () {
 
     map.style.on('load', loadMetroStations);
 
-    $form.on('submit', function (e) {
+    $('.js-close-popin').on('click', closePopin);
+
+    $popin.on('submit', function (e) {
         e.preventDefault(); // do not submit
 
 
@@ -259,6 +265,6 @@ $(window).on('load', function () {
 
         console.log('input', input_val, is_name_match);
 
-        is_name_match && $(this).removeClass('active');
+        is_name_match && closePopin();
     })
 });
