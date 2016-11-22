@@ -128,7 +128,10 @@
 <nav id='filter-group' class='filter-group'></nav>
 
 <p class="github">
-    voir source sur <a href="https://github.com/kazes/les-stations-de-metro">https://github.com/kazes/les-stations-de-metro</a>
+    voir source sur
+    <a href="https://github.com/kazes/les-stations-de-metro" target="_blank">
+        https://github.com/kazes/les-stations-de-metro
+    </a>
 </p>
 
 <!-- JQUERY -->
