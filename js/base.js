@@ -119,7 +119,6 @@ var addStations = function (data) {
         "type": "circle",
         "source": "stations",
         "paint": {
-            //"text-color": "#ffffff"
             // make circles larger as the user zooms from z12 to z22
             'circle-radius': {
                 'base': 1.75,
@@ -148,12 +147,6 @@ var addStations = function (data) {
                     ["M14", line_color["M14"]]
                 ]
             }
-        },
-        "layout": {
-            //"text-field": "{label}", // show station name
-            //"text-font": ["Open Sans Semibold", "Arial Unicode MS Bold"],
-            //"text-offset": [0, 0.6],
-            //"text-anchor": "top"
         }
     });
 
@@ -181,7 +174,7 @@ var addLines = function (lines) {
                 "source": "lines",
                 "paint": {
                     "line-color": line_color[name],
-                    "line-width":{
+                    "line-width": {
                         'base': 1.75,
                         'stops': [[5, 2], [13, 7], [22, 180]]
                     }
@@ -211,6 +204,33 @@ var addLines = function (lines) {
 
 };
 
+var openPopin = function () {
+    $popin.addClass('active');
+    $popin.find('input').focus();
+};
+
+var marker_out = {
+    lng: 48,
+    lat: 2
+};
+
+// create a GeoJSON point to serve as a starting glow
+var glow = {
+    "type": "Point",
+    "coordinates": [marker_out.lng, marker_out.lat] // out there
+};
+
+
+function clearGlow() {
+    moveGlowTo(marker_out);
+}
+
+function moveGlowTo(marker) {
+    glow.coordinates[0] = marker.lng;
+    glow.coordinates[1] = marker.lat;
+    map.getSource('glow').setData(glow);
+}
+
 var loadMetroStations = function () {
     // load metro stations
     $.ajax({
@@ -220,26 +240,63 @@ var loadMetroStations = function () {
 
     // load lines
     /*$.ajax({
-        url: lines_url,
-        dataType: "json"
-    }).done(addLines);
-   */
+     url: lines_url,
+     dataType: "json"
+     }).done(addLines);
+     */
     map.on('click', function (e) {
         var closest = find_closest_marker(e);
         var label = stations[closest].label;
 
-        console.log('to match',label);
+        console.log('to match', label, stations[closest]);
+
+        // move glow to station
+        moveGlowTo(stations[closest]);
 
         station_to_match = label;
 
-        $popin.addClass('active');
-
+        openPopin();
     });
+
+
+    map.on('load', function () {
+        // add the GeoJSON above to a new vector tile source
+        map.addSource('glow', {type: 'geojson', data: glow});
+
+        map.addLayer({
+            "id": "glow-strong",
+            "type": "circle",
+            "source": "glow",
+            "paint": {
+                "circle-radius": 18,
+                "circle-color": "#fff",
+                "circle-opacity": 0.4
+            }
+        });
+
+        map.addLayer({
+            "id": "glow-glow",
+            "type": "circle",
+            "source": "glow",
+            "paint": {
+                "circle-radius": 40,
+                "circle-color": "#fff",
+                "circle-opacity": 0.1
+            }
+        });
+
+
+        // want to animate glow ?
+        // https://www.mapbox.com/mapbox-gl-js/example/animate-point-along-line/
+    });
+
 };
 
 
 var closePopin = function () {
     $popin.removeClass('active');
+    clearGlow();
+    $popin.find('input').val('');
 };
 
 // on page load
