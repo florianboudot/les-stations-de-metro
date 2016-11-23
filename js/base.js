@@ -108,18 +108,6 @@ var addStations = function (data) {
     // add the GeoJSON above to a new vector tile source
     map.addSource('glow', {type: 'geojson', data: glow});
 
-    console.log('glow');
-    map.addLayer({
-        "id": "glow-strong",
-        "type": "circle",
-        "source": "glow",
-        "paint": {
-            "circle-radius": 18,
-            "circle-color": "#fff",
-            "circle-opacity": 0.4
-        }
-    });
-
     map.addLayer({
         "id": "glow-glow",
         "type": "circle",
@@ -274,6 +262,7 @@ function moveGlowTo(marker) {
     map.getSource('glow').setData(glow);
 }
 
+var found_stations = [];
 var loadMetroStations = function () {
     // load metro stations
     $.ajax({
@@ -287,18 +276,12 @@ var loadMetroStations = function () {
      dataType: "json"
      }).done(addLines);
      */
+
     map.on('click', function (e) {
         var closest = find_closest_marker(e);
         var label = stations[closest].label;
 
         $popin.find('.clue').html('(' + label + ')'); // debug mode
-
-        // show station color
-        map.setFilter("stations-colors", ["==", "label", label]);
-
-        // hide black dot of this station
-        map.setFilter("stations-no-colors", ["!=", "label", label]);
-
 
         // move glow to station
         moveGlowTo(stations[closest]);
@@ -340,6 +323,17 @@ $(window).on('load', function () {
 
         console.log('input', input_val, is_name_match);
 
-        is_name_match && closePopin();
+
+        if (is_name_match) {
+            found_stations.push(station_to_match);
+
+            // show station color
+            map.setFilter("stations-colors", ["in", "label"].concat(found_stations));
+
+            // hide black dot of this station
+            map.setFilter("stations-no-colors", ["!=", "label", station_to_match]);
+
+            closePopin();
+        }
     })
 });
