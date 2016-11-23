@@ -121,8 +121,11 @@
 
 <form class="station-form">
     <div class="close js-close-popin">×</div>
-    <label for="station-name">Entrez le nom de cette station</label>
+    <label for="station-name">
+        Entrez le nom de cette station
+    </label>
     <input type="search" id="station-name"/>
+    <div class="clue"></div>
 </form>
 
 <nav id='filter-group' class='filter-group'></nav>

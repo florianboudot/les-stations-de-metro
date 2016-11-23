@@ -104,6 +104,34 @@ var storeMarkers = function (element) {
  * @param data
  */
 var addStations = function (data) {
+
+    // add the GeoJSON above to a new vector tile source
+    map.addSource('glow', {type: 'geojson', data: glow});
+
+    console.log('glow');
+    map.addLayer({
+        "id": "glow-strong",
+        "type": "circle",
+        "source": "glow",
+        "paint": {
+            "circle-radius": 18,
+            "circle-color": "#fff",
+            "circle-opacity": 0.4
+        }
+    });
+
+    map.addLayer({
+        "id": "glow-glow",
+        "type": "circle",
+        "source": "glow",
+        "paint": {
+            "circle-radius": 40,
+            "circle-color": "#fff",
+            "circle-opacity": 0.1
+        }
+    });
+
+
     // gather all useful data for stations
     data.features.forEach(storeMarkers);
 
@@ -113,9 +141,23 @@ var addStations = function (data) {
         "data": data
     });
 
-    // all stations
     map.addLayer({
-        "id": "stations",
+        "id": "stations-no-colors",
+        "type": "circle",
+        "source": "stations",
+        "paint": {
+            // make circles larger as the user zooms from z12 to z22
+            'circle-radius': {
+                'base': 1.75,
+                'stops': [[5, 2], [12, 7], [22, 180]]
+            },
+            'circle-color': '#000000'
+        }
+    });
+
+    // all stations with colors
+    map.addLayer({
+        "id": "stations-colors",
         "type": "circle",
         "source": "stations",
         "paint": {
@@ -147,7 +189,8 @@ var addStations = function (data) {
                     ["M14", line_color["M14"]]
                 ]
             }
-        }
+        },
+        "filter": ["==", "label", ""]
     });
 
     // export for debug
@@ -248,7 +291,14 @@ var loadMetroStations = function () {
         var closest = find_closest_marker(e);
         var label = stations[closest].label;
 
-        console.log('to match', label, stations[closest]);
+        $popin.find('.clue').html('(' + label + ')'); // debug mode
+
+        // show station color
+        map.setFilter("stations-colors", ["==", "label", label]);
+
+        // hide black dot of this station
+        map.setFilter("stations-no-colors", ["!=", "label", label]);
+
 
         // move glow to station
         moveGlowTo(stations[closest]);
@@ -256,38 +306,6 @@ var loadMetroStations = function () {
         station_to_match = label;
 
         openPopin();
-    });
-
-
-    map.on('load', function () {
-        // add the GeoJSON above to a new vector tile source
-        map.addSource('glow', {type: 'geojson', data: glow});
-
-        map.addLayer({
-            "id": "glow-strong",
-            "type": "circle",
-            "source": "glow",
-            "paint": {
-                "circle-radius": 18,
-                "circle-color": "#fff",
-                "circle-opacity": 0.4
-            }
-        });
-
-        map.addLayer({
-            "id": "glow-glow",
-            "type": "circle",
-            "source": "glow",
-            "paint": {
-                "circle-radius": 40,
-                "circle-color": "#fff",
-                "circle-opacity": 0.1
-            }
-        });
-
-
-        // want to animate glow ?
-        // https://www.mapbox.com/mapbox-gl-js/example/animate-point-along-line/
     });
 
 };
