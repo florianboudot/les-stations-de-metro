@@ -290,7 +290,6 @@ var loadMetroStations = function () {
 
         openPopin();
     });
-
 };
 
 
@@ -300,8 +299,34 @@ var closePopin = function () {
     $popin.find('input').val('');
 };
 
+
+var validStationLabel = function (e) {
+    e.preventDefault(); // do not submit
+
+    var input_val = $(this).find('input').val();
+    var is_name_match = input_val.toLowerCase() === station_to_match.toLowerCase();
+
+    if (is_name_match) {
+        // keep station name
+        found_stations.push(station_to_match);
+
+        // show station color
+        map.setFilter("stations-colors", ["in", "label"].concat(found_stations));
+
+        // hide black dot of this station
+        map.setFilter("stations-no-colors", ["!=", "label", station_to_match]);
+
+        closePopin();
+    }
+    else {
+        // show error message
+    }
+};
+
 // on page load
 $(window).on('load', function () {
+
+    // create map
     mapboxgl.accessToken = mapbox_token;
     map = new mapboxgl.Map({
         container: map_id,
@@ -314,26 +339,5 @@ $(window).on('load', function () {
 
     $('.js-close-popin').on('click', closePopin);
 
-    $popin.on('submit', function (e) {
-        e.preventDefault(); // do not submit
-
-
-        var input_val = $(this).find('input').val();
-        var is_name_match = input_val.toLowerCase() === station_to_match.toLowerCase();
-
-        console.log('input', input_val, is_name_match);
-
-
-        if (is_name_match) {
-            found_stations.push(station_to_match);
-
-            // show station color
-            map.setFilter("stations-colors", ["in", "label"].concat(found_stations));
-
-            // hide black dot of this station
-            map.setFilter("stations-no-colors", ["!=", "label", station_to_match]);
-
-            closePopin();
-        }
-    })
+    $popin.on('submit', validStationLabel)
 });
