@@ -119,7 +119,9 @@ a {
 #score-container .label {
     padding-right: 10px;
 }
-
+#score-container .score {
+    padding-right: 10px;
+}
 #header {
     position: absolute;
     top: 30px;

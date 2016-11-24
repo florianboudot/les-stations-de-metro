@@ -24,6 +24,7 @@ var $popin = $('.station-form');
 var stations = [];
 var station_to_find = '';
 var score = 0;
+var total = 0;
 var line_color = {
     "M1": '#FFCD00',
     "M2": '#003CA6',
@@ -86,14 +87,14 @@ function find_closest_marker(click_event) {
 
 /**
  * store cleaned metro stations data
- * @param element
+ * @param marker
  */
-var storeMarkers = function (element) {
+var storeStations = function (marker) {
     stations.push(
         {
-            label: element.properties.label,
-            lat: element.geometry.coordinates[1],
-            lng: element.geometry.coordinates[0]
+            label: marker.properties.label,
+            lat: marker.geometry.coordinates[1],
+            lng: marker.geometry.coordinates[0]
         }
     );
 };
@@ -121,7 +122,10 @@ var addStations = function (data) {
 
 
     // gather all useful data for stations
-    data.features.forEach(storeMarkers);
+    data.features.forEach(storeStations);
+
+    total = stations.length;
+    $('.total').html('/ '+total);
 
     // all stations
     map.addSource("stations", {
@@ -300,6 +304,11 @@ var closePopin = function () {
 };
 
 
+var updateScore = function (num) {
+    score += num;
+    $('.score').html(score);
+};
+
 /**
  * Checks if submited name is correct
  * @param e
@@ -319,6 +328,8 @@ var validateStation = function (e) {
 
         // hide black dot of this station
         map.setFilter("stations-no-colors", ["!=", "label", station_to_find]);
+
+        updateScore(1);
 
         closePopin();
     }

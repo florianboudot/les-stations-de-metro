@@ -45,9 +45,12 @@
 
 <div id="score-container">
     <p class="label">
-        score
+        trouvées :
     </p>
     <p class="score">
+        0
+    </p>
+    <p class="total">
         0
     </p>
 </div>
