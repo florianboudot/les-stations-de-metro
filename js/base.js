@@ -20,10 +20,10 @@ var map_zoom = 12;
 var map_id = 'map';
 
 // vars
-
 var $popin = $('.station-form');
 var stations = [];
-var station_to_match = '';
+var station_to_find = '';
+var score = 0;
 var line_color = {
     "M1": '#FFCD00',
     "M2": '#003CA6',
@@ -236,6 +236,7 @@ var addLines = function (lines) {
 };
 
 var openPopin = function () {
+    $popin.find('.clue').html('(' + station_to_find + ')'); // debug mode
     $popin.addClass('active');
     $popin.find('input').focus();
 };
@@ -279,14 +280,13 @@ var loadMetroStations = function () {
 
     map.on('click', function (e) {
         var closest = find_closest_marker(e);
-        var label = stations[closest].label;
+        var closest_label = stations[closest].label;
 
-        $popin.find('.clue').html('(' + label + ')'); // debug mode
-
-        // move glow to station
+        // move glow to station to find
         moveGlowTo(stations[closest]);
 
-        station_to_match = label;
+        station_to_find = closest_label;
+
 
         openPopin();
     });
@@ -300,21 +300,25 @@ var closePopin = function () {
 };
 
 
-var validStationLabel = function (e) {
+/**
+ * Checks if submited name is correct
+ * @param e
+ */
+var validateStation = function (e) {
     e.preventDefault(); // do not submit
 
     var input_val = $(this).find('input').val();
-    var is_name_match = input_val.toLowerCase() === station_to_match.toLowerCase();
+    var is_name_match = latinize(input_val.toLowerCase()) === latinize(station_to_find.toLowerCase());
 
     if (is_name_match) {
         // keep station name
-        found_stations.push(station_to_match);
+        found_stations.push(station_to_find);
 
         // show station color
         map.setFilter("stations-colors", ["in", "label"].concat(found_stations));
 
         // hide black dot of this station
-        map.setFilter("stations-no-colors", ["!=", "label", station_to_match]);
+        map.setFilter("stations-no-colors", ["!=", "label", station_to_find]);
 
         closePopin();
     }
@@ -339,5 +343,5 @@ $(window).on('load', function () {
 
     $('.js-close-popin').on('click', closePopin);
 
-    $popin.on('submit', validStationLabel)
+    $popin.on('submit', validateStation)
 });
