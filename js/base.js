@@ -14,13 +14,19 @@ var lines_url = 'lines.geojson';
 // the map
 var map = null;
 var mapbox_token = 'pk.eyJ1Ijoia2F6ZXMiLCJhIjoiMjBiMDc0M2UzYTdkY2NjZDZjZDVhZDdjYWMxMWU4NGMifQ.UbQyYB-QiEQklqy7AXI4XA';
-var map_style_url = 'mapbox://styles/kazes/cippyzs87004qdmm8k67m0nuu';
-var map_center = [2.3626665182515296, 48.8620380668425];
-var map_zoom = 12;
-var map_id = 'map';
+
+
+var map_options = {
+    container: 'map',
+    style: 'mapbox://styles/kazes/cippyzs87004qdmm8k67m0nuu',
+    center: [2.3626665182515296, 48.8620380668425],
+    zoom: 12,
+    maxZoom : 15
+};
 
 // vars
 var $popin = $('.station-form');
+var found_stations = [];
 var stations = [];
 var station_to_find = '';
 var score = 0;
@@ -70,8 +76,7 @@ function find_closest_marker(click_event) {
         var mlng = stations[i].lng;
         var dLat = rad(mlat - lat);
         var dLong = rad(mlng - lng);
-        var a = Math.sin(dLat / 2) * Math.sin(dLat / 2) +
-            Math.cos(rad(lat)) * Math.cos(rad(lat)) * Math.sin(dLong / 2) * Math.sin(dLong / 2);
+        var a = Math.sin(dLat / 2) * Math.sin(dLat / 2) + Math.cos(rad(lat)) * Math.cos(rad(lat)) * Math.sin(dLong / 2) * Math.sin(dLong / 2);
         var c = 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1 - a));
         var d = R * c;
         distances[i] = d;
@@ -80,8 +85,7 @@ function find_closest_marker(click_event) {
         }
     }
 
-    return closest;
-
+    return stations[closest];
 }
 
 
@@ -284,8 +288,10 @@ function moveGlowTo(marker) {
     map.getSource('glow').setData(glow);
 }
 
-var found_stations = [];
-var loadMetroStations = function () {
+/**
+ * load data for stations
+ */
+var loadStationsData = function () {
     // load metro stations
     $.ajax({
         url: stations_metro_url,
@@ -299,18 +305,7 @@ var loadMetroStations = function () {
      }).done(addLines);
      */
 
-    map.on('click', function (e) {
-        var closest = find_closest_marker(e);
-        var closest_label = stations[closest].label;
 
-        // move glow to station to find
-        moveGlowTo(stations[closest]);
-
-        station_to_find = closest_label;
-
-
-        openPopin();
-    });
 };
 
 
@@ -356,19 +351,29 @@ var validateStation = function (e) {
     }
 };
 
+
+var stationGuess = function (e) {
+    // find closest station
+    var station = find_closest_marker(e);
+
+    // highlight station to find
+    moveGlowTo(station);
+    station_to_find = station.label;
+
+    // ask user about the station
+    openPopin();
+};
+
 // on page load
 $(window).on('load', function () {
 
     // create map
     mapboxgl.accessToken = mapbox_token;
-    map = new mapboxgl.Map({
-        container: map_id,
-        style: map_style_url,
-        center: map_center,
-        zoom: map_zoom
-    });
+    map = new mapboxgl.Map(map_options);
 
-    map.style.on('load', loadMetroStations);
+    map.on('load', loadStationsData);
+
+    map.on('click', stationGuess);
 
     $('.js-close-popin').on('click', closePopin);
 
