@@ -125,7 +125,7 @@ var addStations = function (data) {
     data.features.forEach(storeStations);
 
     total = stations.length;
-    $('.total').html('/ '+total);
+    $('.total').html('/ ' + total);
 
     // all stations
     map.addSource("stations", {
@@ -145,6 +145,23 @@ var addStations = function (data) {
             },
             'circle-color': '#000000'
         }
+    });
+
+
+    map.addLayer({
+        "id": "stations-labels",
+        "type": "symbol",
+        "source": "stations",
+        "paint": {
+            "text-color": "#ffffff"
+        },
+        "layout": {
+            "text-field": "{label}", // show station name
+            "text-font": ["Open Sans Semibold", "Arial Unicode MS Bold"],
+            "text-offset": [0, 0.6],
+            "text-anchor": "top"
+        },
+        "filter": ["==", "label", ""] // display none
     });
 
     // all stations with colors
@@ -182,7 +199,7 @@ var addStations = function (data) {
                 ]
             }
         },
-        "filter": ["==", "label", ""]
+        "filter": ["==", "label", ""] // display none
     });
 
     // export for debug
@@ -323,8 +340,9 @@ var validateStation = function (e) {
         // keep station name
         found_stations.push(station_to_find);
 
-        // show station color
+        // show station color and name
         map.setFilter("stations-colors", ["in", "label"].concat(found_stations));
+        map.setFilter("stations-labels", ["in", "label"].concat(found_stations));
 
         // hide black dot of this station
         map.setFilter("stations-no-colors", ["!=", "label", station_to_find]);
