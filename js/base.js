@@ -63,7 +63,7 @@ function rad(x) {
  * Find the closest marker
  * @param click_event
  */
-function find_closest_marker(click_event) {
+function findClosestMarker(click_event) {
     var lat = click_event.lngLat.lat;
     var lng = click_event.lngLat.lng;
     var R = 6371; // radius of earth in km
@@ -73,6 +73,10 @@ function find_closest_marker(click_event) {
     // loop through all stations
     for (i = 0; i < stations.length; i++) {
         var mlat = stations[i].lat;
+        var is_already_found = found_stations.indexOf(stations[i].label) !== -1;
+        if(is_already_found){
+            continue; // skip iteration
+        }
         var mlng = stations[i].lng;
         var dLat = rad(mlat - lat);
         var dLong = rad(mlng - lng);
@@ -80,8 +84,14 @@ function find_closest_marker(click_event) {
         var c = 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1 - a));
         var d = R * c;
         distances[i] = d;
+
+
+
         if (closest == -1 || d < distances[closest]) {
             closest = i;
+
+
+
         }
     }
 
@@ -354,7 +364,7 @@ var validateStation = function (e) {
 
 var stationGuess = function (e) {
     // find closest station
-    var station = find_closest_marker(e);
+    var station = findClosestMarker(e);
 
     // highlight station to find
     moveGlowTo(station);
