@@ -19,19 +19,40 @@
 <!-- MAP -->
 <div id='map'></div>
 
+
+<!-- TITLE -->
+<div id="header">
+    <h1 class="main-title">
+        Les stations de métro
+    </h1>
+    <h2 class="main-subtitle">
+        Trouvez et nommez toutes les stations du métro Parisien
+    </h2>
+</div>
+
 <!-- POPIN ENTER STATION NAME -->
 <form class="station-form">
     <div class="close js-close-popin">×</div>
     <label for="station-name">
         Entrez le nom de cette station
     </label>
-    <input type="search" id="station-name"/>
+    <input type="search" id="station-name" autocomplete="off">
     <div class="clue"></div>
 </form>
 
+
 <nav id='filter-group' class='filter-group'></nav>
 
-<!-- FOOTER -->
+<div id="score-container">
+    <p class="label">
+        score
+    </p>
+    <p class="score">
+        0
+    </p>
+</div>
+
+<!-- GITHUB -->
 <p class="github">
     voir source sur
     <a href="https://github.com/kazes/les-stations-de-metro" target="_blank">
@@ -40,6 +61,7 @@
 </p>
 
 <!-- SCRIPTS -->
+<script src="js/libs/latinize.js"></script>
 <script src="js/jquery-2.2.4.min.js"></script>
 <script src="js/base.js"></script>
 
