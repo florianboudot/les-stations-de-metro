@@ -6,7 +6,6 @@
  *
  * */
 
-
 // data urls
 var stations_metro_url = 'stations.geojson';
 var lines_url = 'lines.geojson';
@@ -21,7 +20,7 @@ var map_options = {
     style: 'mapbox://styles/kazes/cippyzs87004qdmm8k67m0nuu',
     center: [2.3626665182515296, 48.8620380668425],
     zoom: 12,
-    maxZoom : 15
+    maxZoom: 15
 };
 
 // vars
@@ -74,7 +73,7 @@ function findClosestMarker(click_event) {
     for (i = 0; i < stations.length; i++) {
         var mlat = stations[i].lat;
         var is_already_found = found_stations.indexOf(stations[i].label) !== -1;
-        if(is_already_found){
+        if (is_already_found) {
             continue; // skip iteration
         }
         var mlng = stations[i].lng;
@@ -86,10 +85,8 @@ function findClosestMarker(click_event) {
         distances[i] = d;
 
 
-
         if (closest == -1 || d < distances[closest]) {
             closest = i;
-
 
 
         }
@@ -231,7 +228,7 @@ var addLines = function (lines) {
     lines.features.forEach(function (feature) {
         var name = feature.properties['name'];
         var layerID = 'line-' + name;
-        console.log('layerID', layerID);
+
         // Add a layer for this symbol type if it hasn't been added already.
         if (!map.getLayer(layerID)) {
             map.addLayer({
@@ -245,14 +242,15 @@ var addLines = function (lines) {
                         'stops': [[5, 2], [13, 7], [22, 180]]
                     }
                 },
-                "filter": ["==", "name", name]
+                "filter": ["==", "name", ""]
+                //"filter": ["==", "name", name]
             });
 
             // Add checkbox and label elements for the layer.
             var input = document.createElement('input');
             input.type = 'checkbox';
             input.id = layerID;
-            input.checked = true;
+            input.checked = false;
             filterGroup.appendChild(input);
 
             var label = document.createElement('label');
@@ -262,8 +260,10 @@ var addLines = function (lines) {
 
             // When the checkbox changes, update the visibility of the layer.
             input.addEventListener('change', function (e) {
-                map.setLayoutProperty(layerID, 'visibility',
-                    e.target.checked ? 'visible' : 'none');
+                console.log('click', e);
+
+                map.setFilter(layerID, ["==", "name", name]);
+                map.setLayoutProperty(layerID, 'visibility', e.target.checked ? 'visible' : 'none');
             });
         }
     });
@@ -302,18 +302,24 @@ function moveGlowTo(marker) {
  * load data for stations
  */
 var loadStationsData = function () {
-    // load metro stations
-    $.ajax({
-        url: stations_metro_url,
-        dataType: "json"
-    }).done(addStations);
 
     // load lines
-    /*$.ajax({
-     url: lines_url,
-     dataType: "json"
-     }).done(addLines);
-     */
+    $.ajax({
+        url: lines_url,
+        dataType: "json"
+    }).done(addLines).then(
+        function () {
+
+            // load metro stations
+            $.ajax({
+                url: stations_metro_url,
+                dataType: "json"
+            }).done(addStations);
+
+        }
+
+    );
+
 
 
 };

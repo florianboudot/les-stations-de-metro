@@ -26,10 +26,13 @@ a {
     top: 50%;
     display: none;
     transform: translate(-50%, -50%);
+    transition: opacity 300ms ease;
+    opacity: 0;
 }
 
 .station-form.active {
     display: block;
+    opacity: 1;
 }
 
 .station-form label {
