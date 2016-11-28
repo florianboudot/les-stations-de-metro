@@ -1,5 +1,8 @@
-# Les stations de métro
+# Les stations de métro (work in progress)
 Jeu gratuit où il faut découvrir toutes les stations du métro Parisien sur une carte.
+
+# Démo
+https://kazes.github.io/les-stations-de-metro/
 
 # Règles
 * Découvrez sur la carte les stations de métro de Paris. Pas celles du RER, ni du bus, ni du tramway.
