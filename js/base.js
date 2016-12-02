@@ -297,6 +297,22 @@ function moveGlowTo(marker) {
     map.getSource('glow').setData(glow);
 }
 
+function centerMapTo(marker) {
+    map.flyTo({
+        center: [marker.lng, marker.lat - 0.005],
+        zoom: 14
+    });
+    /*map.flyTo({
+     center: [0, 0],
+     zoom: 9,
+     speed: 0.2,
+     curve: 1,
+     easing(t) {
+     return t;
+     }
+     });*/
+}
+
 /**
  * load data for stations
  */
@@ -316,9 +332,7 @@ var loadStationsData = function () {
             }).done(addStations);
 
         }
-
     );
-
 
 
 };
@@ -373,6 +387,7 @@ var stationGuess = function (e) {
 
     // highlight station to find
     moveGlowTo(station);
+    centerMapTo(station);
     station_to_find = station.label;
 
     // ask user about the station

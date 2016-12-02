@@ -20,19 +20,30 @@ a {
 .station-form {
     background: white;
     color: #000;
-    padding: 30px 20px 20px 20px;
+    padding: 0 20px 20px 20px;
     position: absolute;
     left: 50%;
-    top: 50%;
+    transform: translateX(-50%);
+    bottom: 130px;
     display: none;
-    transform: translate(-50%, -50%);
     transition: opacity 300ms ease;
     opacity: 0;
 }
 
 .station-form.active {
-    display: block;
+    display: flex;
+    flex-direction: column;
     opacity: 1;
+}
+
+.station-form .head {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.station-form .close {
+    cursor: pointer;
+    font-size: 50px;
 }
 
 .station-form label {
@@ -42,18 +53,17 @@ a {
 
 .station-form input {
     text-align: center;
+    font-size: 48px;
 }
 
-.station-form .close {
-    position: absolute;
-    right: 10px;
-    top: 10px;
-    cursor: pointer;
-    font-size: 20px;
+.station-form input::-webkit-input-placeholder {
+    opacity: 0.3;
 }
+
 .station-form .clue {
     padding: 10px;
     padding-left: 0;
+    text-align: center;
 }
 
 .filter-group {
@@ -122,9 +132,11 @@ a {
 #score-container .label {
     padding-right: 10px;
 }
+
 #score-container .score {
     padding-right: 10px;
 }
+
 #header {
     position: absolute;
     top: 30px;
