@@ -20,6 +20,7 @@ var map_options = {
     style: 'mapbox://styles/kazes/cippyzs87004qdmm8k67m0nuu',
     center: [2.3403505392404895, 48.86056993421974],
     zoom: 12,
+    minZoom: 10,
     maxZoom: 15
 };
 
@@ -137,6 +138,7 @@ var addStations = function (data) {
 
     total = stations.length;
     $('.total').html('/ ' + total);
+    $('.title-total').html(total);
 
     // all stations
     map.addSource("stations", {
@@ -311,6 +313,9 @@ function centerMapTo(marker) {
      return t;
      }
      });*/
+
+    // flyto callback
+    // http://gis.stackexchange.com/questions/173862/how-to-determine-when-mapbox-gl-js-flyto-has-arrived
 }
 
 /**
