@@ -18,7 +18,7 @@ var mapbox_token = 'pk.eyJ1Ijoia2F6ZXMiLCJhIjoiMjBiMDc0M2UzYTdkY2NjZDZjZDVhZDdjY
 var map_options = {
     container: 'map',
     style: 'mapbox://styles/kazes/cippyzs87004qdmm8k67m0nuu',
-    center: [2.3626665182515296, 48.8620380668425],
+    center: [2.3403505392404895, 48.86056993421974],
     zoom: 12,
     maxZoom: 15
 };
@@ -157,7 +157,7 @@ var addStations = function (data) {
             'circle-color': '#000000'
         }
     });
-
+    // todo create function to reveal all
 
     map.addLayer({
         "id": "stations-labels",
@@ -171,7 +171,8 @@ var addStations = function (data) {
             "text-font": ["Open Sans Semibold", "Arial Unicode MS Bold"],
             "text-offset": [0, 0.6],
             "text-anchor": "top"
-        },
+        }
+        ,
         "filter": ["==", "label", ""] // display none
     });
 
@@ -260,8 +261,6 @@ var addLines = function (lines) {
 
             // When the checkbox changes, update the visibility of the layer.
             input.addEventListener('change', function (e) {
-                console.log('click', e);
-
                 map.setFilter(layerID, ["==", "name", name]);
                 map.setLayoutProperty(layerID, 'visibility', e.target.checked ? 'visible' : 'none');
             });
