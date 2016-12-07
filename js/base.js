@@ -88,7 +88,7 @@ function findClosestMarker(click_event) {
 
         if (closest == -1 || d < distances[closest]) {
             closest = i;
-
+            console.log('stations[closest]',stations[closest].label);
 
         }
     }
