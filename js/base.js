@@ -6,6 +6,9 @@
  *
  * */
 
+'use strict';
+var latinize = require('./libs/latinize').default;
+
 // data urls
 var stations_metro_url = 'stations.geojson';
 var lines_url = 'lines.geojson';
@@ -71,7 +74,7 @@ function findClosestMarker(click_event) {
     var closest = -1;
 
     // loop through all stations
-    for (i = 0; i < stations.length; i++) {
+    for (var i = 0; i < stations.length; i++) {
         var mlat = stations[i].lat;
         var is_already_found = found_stations.indexOf(stations[i].label) !== -1;
         if (is_already_found) {

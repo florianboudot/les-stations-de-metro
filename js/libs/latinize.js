@@ -1,6 +1,6 @@
 
 
-function latinize(str) {
+var latinize = function(str) {
     if (typeof str === 'string') {
         return str.replace(/[^A-Za-z0-9]/g, function (x) {
             return latinize.characters[x] || x;
@@ -8,7 +8,7 @@ function latinize(str) {
     } else {
         return str;
     }
-}
+};
 
 latinize.characters = {
         '-': ' ', // added by flobou
@@ -907,3 +907,4 @@ latinize.characters = {
     };
 
 
+export default latinize;
